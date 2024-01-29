@@ -50,7 +50,15 @@ conocer visual studio, pero creoq ue tengo aun mucho que aprender sobre esta her
 El sitio infoma que la herramienta principal para esta unidad 1 que esta omenzando es la 
 vitualCPU de java los cuales esta en los PCs de la u 
 pero creo qeu tratare de tenerlo a la mano de ser posible 
+se explica como se abre o como se busca y nos da un link en caso de no tenerlo. 
+https://www.java.com/en/download/
+este es el link de descarga de la cpu vitual de java 
 
+### cierre de sesión 
+dado que estoy atrasado una semana completa de trbajo desidi comenzar desde el comienzo y ir adelantanto en sesiones autonomas
+para estar a la par de mis compañeros antes de el viernes ya que dada la instruccion del profesor debe actualizarse y subirse todo de la bitacora antes de el virnes 12:00pm 
+me ha quedado bastante claro la metodologia del curso, se me ha hecho muy comoda la metodologia en esta primera sesión puedo decir que aunque no he comenzado las actividades,
+erea importante ponerme al tanto de esta imformacion para comenzar el curso y llevar de una manera adecuada mi bitacora 
 
 
 
