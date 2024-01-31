@@ -186,6 +186,11 @@ MAs cambios
 
 Hola en la U
 
+se utiliza git bash para realizar el comit y con eso concluye y continuo con la prueva de la actividad 
+
+![image](https://github.com/jfUPB/bitacorassc2024-10-AndyCM99/assets/110075857/322c6265-6bb0-4963-9519-a1b8b14270d7)
+
+
 
 
 
