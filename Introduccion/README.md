@@ -63,7 +63,129 @@ erea importante ponerme al tanto de esta imformacion para comenzar el curso y ll
 
 
 
-## Sesión trabajo independiente
+## Sesión trabajo del dia 31/01
+continuo poniendome al dia ya que los primeros dias, mi horairo no me lo permiten, asi que continuo recorriendo la introduccion del curso 
+comenzado con Introducción al al flujo de trabajo del curso que consiste en unas cuantas actividades 
+
+###actividad 1
+consistía en abrir el un archivoq eu descargamos del sitio del curso 
+
+![image](https://github.com/jfUPB/bitacorassc2024-10-AndyCM99/assets/110075857/609a2532-e688-44b3-895e-d05d7bfb59b2)
+
+luego ejecurar un archibo llamado 
+
+![image](https://github.com/jfUPB/bitacorassc2024-10-AndyCM99/assets/110075857/b749c86d-04e0-42ea-a45e-153087fe6b15)
+
+Se ídio adicional extender desde la parte inferior de la ventaa para ver el cajon de resultados y errores 
+
+###actividad 2 
+primero me pedian escribir un programa en visual studio el cual contenia esto 
+```c
+@16384
+D=A
+@16
+M=D
+@24576
+D=M
+@19
+D;JNE
+@16
+D=M
+@16384
+D=D-A
+@4
+D;JLE
+@16
+AM=M-1
+M=0
+@4
+0;JMP
+@16
+D=M
+@24576
+D=D-A
+@4
+D;JGE
+@16
+A=M
+M=-1
+@16
+M=M+1
+@4
+0;JMP
+```
+
+luego cuardarlo con un nombre y 
+cargaro en el emulador  el cual se cargo de este boton y luego buscando el archivo y luedo ejecutando el boton cargar 
+
+![image](https://github.com/jfUPB/bitacorassc2024-10-AndyCM99/assets/110075857/bcdca10b-f370-4cae-a44b-2c5385f7f901)
+
+y luego quedo de esta manera la ROM donde se pedia cargar el archivo de visual studio 
+
+![image](https://github.com/jfUPB/bitacorassc2024-10-AndyCM99/assets/110075857/a8d7c5c4-34dc-46f1-8d83-04153c824bf4)
+
+para luego hacerse unos ajustes como mover a fast el slider, animate ponerlo en no animation 
+
+
+y luego boton de run para comenzar el programa 
+
+![image](https://github.com/jfUPB/bitacorassc2024-10-AndyCM99/assets/110075857/d353578f-24ee-48f4-ba2f-4927dca3eb3b)
+run coloreado de rojo y se muestr<a lo demas 
+
+luego se presiono el boton teclado para activar la entrada por teclado y pues comenzar a a usar el programa y pues cuando presiono pasa esto 
+
+![image](https://github.com/jfUPB/bitacorassc2024-10-AndyCM99/assets/110075857/9d071f70-ab14-448d-a8ff-6ecf227a69c1)
+
+y cuando soltava la tecla el visualizador se veia blanco de nuevo 
+
+![image](https://github.com/jfUPB/bitacorassc2024-10-AndyCM99/assets/110075857/1cd5f0d2-a836-4974-8597-dde592684784)
+
+luego, se me pidio que cambiara un poco el codigo haciendo un commit, y luego lo volviera cargar 
+
+de esta manera 
+
+```c
+@16384
+D=A
+@16
+M=D
+(LOOP)
+@24576
+D=M
+@19
+D;JNE
+@16
+D=M
+@16384
+D=D-A
+@LOOP
+D;JLE
+@16
+AM=M-1
+M=0
+@LOOP
+0;JMP
+@16
+D=M
+@24576
+D=D-A
+@LOOP
+D;JGE
+@16
+A=M
+M=-1
+@16
+M=M+1
+@LOOP
+0;JMP
+```
+
+
+
+
+
+
+
 
 
 
