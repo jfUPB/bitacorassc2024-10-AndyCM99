@@ -179,6 +179,9 @@ M=M+1
 @LOOP
 0;JMP
 ```
+procedo a cargarlo con los cambios solicitados 
+
+
 
 
 
