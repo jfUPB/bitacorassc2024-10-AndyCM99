@@ -192,6 +192,22 @@ se utiliza git bash para realizar el comit y con eso concluye y continuo con la 
 
 
 
+## Sesión trabajo autónomo 1/02
+
+tome una oportunidad para mirar un breve curso sobre git bash y traer lo trabajado en la sesion anterior con lo que procedi 
+
+se me presento un inconveniente durante el dia de hoy por lo que no he podido avanzar mucho 
+
+pero pude terminar hasta este punto la introduccion 
+
+no tengo la evidecia del los cambios agrando el LOOP pero se realizo durante la clase con la ayuda del profe con su aporte sobre GIT pero 
+
+continuare con la unidad 1, correspondiente a la semana actual 
+
+####fin de la sesíon
+
+
+
 
 
 
