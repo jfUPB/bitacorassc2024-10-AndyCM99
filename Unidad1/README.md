@@ -35,14 +35,23 @@ cuando uno es la negacion del otro
 ###2
 ______________
 |x	|y|	z|	R|
+
 |0	|0|	0|	1|
+
 |0	|0|	1|	0|
+
 |0	|1|	0|	1|
+
 |0	|1|	1|	0|
+
 |1	|0|	0|	0|
+
 |1	|0|	1|	1|
+
 |1	|1| 0|	0|
+
 |1	|1|	1|	1|
+
 --------------
 
 tenemos la tabla de tres entradas y una salida que es r  y su funcion seria mas o menos 
