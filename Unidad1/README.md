@@ -65,3 +65,18 @@ pense ene sta inspirado por la imagen de la pregunta anterior
 
 
 
+
+
+
+
+
+
+# sesión 1 semana 3 
+
+el dia de hoy comenzamos provando el juego Silicon Zeroes, muy interezante biendo como funcionan los operadores logicos de la maquina pc 
+pudimos aprender sobre todos estos contadores logicos y su tiempos para ver como funcionan y como trasmiten la imformacion para poder tomar un u otra decision 
+o simplemnte leer la imformacion de cierta manera 
+
+
+
+
