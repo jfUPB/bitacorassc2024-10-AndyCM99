@@ -114,8 +114,27 @@ pidiendo guardar un numero 69 en la particion d
 
 se hizo esto 
 
+```c
+// instruccion tipo A
+// @numeropositivo 
+@25
+
+// instruccion tipo C
+//destino = operación;salto (opcional)
+//operacion (obligatoria, simpre hay que pedir una operacion) 
+@69
+D=A
+```
 
 #### micro-sesión 4:
+Reflexión final
+
+Se podría decir que si se logró completar lo que se planteo para la clase de hoy 
+Quedo pendiente ordenar las bitácoras 
+Au me falta poner algunas cosas al día 
+Falto hablar con el profe, pues quedamos de organizar la tabla de puntos y no se realizó 
+
+
 
 
 
