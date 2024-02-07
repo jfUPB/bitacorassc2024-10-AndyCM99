@@ -84,10 +84,37 @@ Apertura: se hablo sobre como seria la Sesión
 -Review sobre las bitácoras 
 -Ajuste de cuentas con la tabla de puntos 
 -Programar el ensamblador 
+se pidio organizar la Bitácora de aprendizaje
+de esta manera 
 
 
 #### micro-sesión 2:
+-Programar el ensamblador 
+comenzamos con una pequeña prueva de un numero bonarrio para interpretar que numero y como 
+leiamos en el cpuemulator con la ayuda de la calculadora en modo programador de windows. 
+
+![image](https://github.com/jfUPB/bitacorassc2024-10-AndyCM99/assets/110075857/e392c70f-f424-4914-8c52-22b29552cbdc)
+
+Luego de ejecutar la instrucción paso esto 
+
+![image](https://github.com/jfUPB/bitacorassc2024-10-AndyCM99/assets/110075857/d010e3d2-f021-4e78-abbe-a3be5ebd00a9)
+
+luego probar una instrucción tipo C
+pero solo se dio la explicación   
+
+
 #### micro-sesión 3:
+
+se esta habalndo de ña cantidad de péraciones que se pueden hacer dependiendo de la 
+cantidad de bit pensado en operaciones de tipo c
+analizamos eso en un capitulo del libro recomendado en el sitio de la materia 
+
+se planteo un ejercicio para una operacion tipo c 
+pidiendo guardar un numero 69 en la particion d 
+
+se hizo esto 
+
+
 #### micro-sesión 4:
 
 
