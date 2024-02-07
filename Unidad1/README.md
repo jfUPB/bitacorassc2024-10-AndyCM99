@@ -1,6 +1,6 @@
 # Bitácora de aprendizaje
-#Comienzo de la unidad 1 
-
+## SEMANA2
+### Sesión1
 se hablo durante la semana de solver satisfactoriamente las preguntas en la unidad 1 
 
 ![image](https://github.com/jfUPB/bitacorassc2024-10-AndyCM99/assets/110075857/867e6b82-5ea0-4c59-90f3-ac328059da8c)
@@ -17,7 +17,7 @@ https://www.youtube.com/playlist?list=PLrDd_kMiAuNmSb-CKWQqq9oBFN_KNMTaI videos
 
 opr lo prnto comenzare con las preguntas 
 
-###1
+1
 
 en el video me encontre con una formula bastante interesante 
 
@@ -32,7 +32,7 @@ cuando uno es la negacion del otro
 
 
 
-###2
+2
 ______________
 |x	|y|	z|	R|
 
@@ -61,7 +61,7 @@ D= NOT(X) AND Z OR X AND NOT(Y) AND Z OR X AND Y AND NOT(Z= OR X AND Y AND Z
 pense ene sta inspirado por la imagen de la pregunta anterior 
 
 
-###3
+3
 
 
 
@@ -70,12 +70,25 @@ pense ene sta inspirado por la imagen de la pregunta anterior
 
 
 
-
-# sesión 1 semana 3 
+## SEMANA3
+### Sesión 1
 
 el dia de hoy comenzamos provando el juego Silicon Zeroes, muy interezante biendo como funcionan los operadores logicos de la maquina pc 
 pudimos aprender sobre todos estos contadores logicos y su tiempos para ver como funcionan y como trasmiten la imformacion para poder tomar un u otra decision 
-o simplemnte leer la imformacion de cierta manera 
+o simplemnte leer la imformacion de cierta manera. 
+
+### Sesión 2
+#### micro-sesión 1:
+Apertura: se hablo sobre como seria la Sesión 
+-Apertura de la semana 
+-Review sobre las bitácoras 
+-Ajuste de cuentas con la tabla de puntos 
+-Programar el ensamblador 
+
+
+#### micro-sesión 2:
+#### micro-sesión 3:
+#### micro-sesión 4:
 
 
 
