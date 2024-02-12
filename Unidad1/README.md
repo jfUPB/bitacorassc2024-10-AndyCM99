@@ -167,7 +167,7 @@ D=A
 M=D
 
 ```
-
+durante esta secion me limite a tomar atencion ya que tenia mis dudas subre el tema 
 
 #### micro-sesión 2:
 Comenzaos construyendo un código similar al de la introducción, lo recorrimos de arriba abajo
@@ -198,10 +198,16 @@ M = 0
 @START
 0;JMP
 ```
+durante esta secion me limite a tomar atencion ya que tenia mis dudas subre el tema 
 
 
 #### micro-sesión 3:
 #### micro-sesión 4:cierre. Reflexión final.
+se pudieron tratar todos los temas, me quedo bastante claro como fusionan los loops y cómo funciona 
+la lógica del código, saber en que momento, el toma la decisión de volver a estar o continuar con el programa 
+se proyecto terminar todo de la unidad 1 para la semana que viene 
+mirar en chat gtp una manera de solucionar el problema con la ayuda del chatGTP 
+
 
 ### Sesión 2
 
