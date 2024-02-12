@@ -137,8 +137,31 @@ Falto hablar con el profe, pues quedamos de organizar la tabla de puntos y no se
 ## SEMANA 4
 
 ### Sesión 1
-
 #### micro-sesión 1:apertura. Reflexión inicial.
+El día de hoy tendremos un trabajo con el profesor para explicar herramientas que nos 
+pueden ser útiles a la hora de resolver el proyecto para esta primera unidad, realizaremos 
+el trabajo entre todos, tratando temas como 
+-Labels 
+-Variables 
+-Saltos 
+-I/O: teclado, display 
+-Algunas estructuras de control 
+Comenzamos viendo como el CPUEMULATOR interactúa con las instrucciones de tipo a y c 
+
+Explicando como carga instrucciones en la RAM, utilizando una analogía sobre cocina 
+Como si el libro de recetas fuera la Rom, la cocina la RAM y el cocinero la CPU 
+
+Se explico como se crean las variables y como se carga al 
+registro de la CPU una instrucción de esta manera 
+
+```c
+@variable
+D=M
+@variable2
+D=M
+```
+
+
 #### micro-sesión 2:
 #### micro-sesión 3:
 #### micro-sesión 4:cierre. Reflexión final.
