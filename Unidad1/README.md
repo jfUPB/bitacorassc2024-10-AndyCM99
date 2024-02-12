@@ -159,10 +159,47 @@ registro de la CPU una instrucción de esta manera
 D=M
 @variable2
 D=M
+//quiero guardar en 
+//la posición 66 de la memoria el numero 15
+@15
+D=A
+@66 
+M=D
+
 ```
 
 
 #### micro-sesión 2:
+Comenzaos construyendo un código similar al de la introducción, lo recorrimos de arriba abajo
+contrayendo para ejemplificar como funcionaban 
+Los labels, variables, saltos, entrada por teclado y diplay y algunas estructuras de control  
+
+```c
+// Si hay un tecla presiona pinto los primeros
+// 16 pixeles, si no los borro.
+// Recordar: la primera posición de la pantalla
+// es la 16384. La posición del teclado es la
+// 24576.
+
+
+(START)
+@24576
+D = M
+@IF
+D;JEQ
+// ELSE
+@16384
+M = -1
+@START
+0;JMP
+(IF)
+@16384
+M = 0
+@START
+0;JMP
+```
+
+
 #### micro-sesión 3:
 #### micro-sesión 4:cierre. Reflexión final.
 
