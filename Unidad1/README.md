@@ -70,7 +70,7 @@ pense ene sta inspirado por la imagen de la pregunta anterior
 
 
 
-## SEMANA3
+## SEMANA 3
 ### Sesión 1
 
 el dia de hoy comenzamos provando el juego Silicon Zeroes, muy interezante biendo como funcionan los operadores logicos de la maquina pc 
@@ -78,7 +78,7 @@ pudimos aprender sobre todos estos contadores logicos y su tiempos para ver como
 o simplemnte leer la imformacion de cierta manera. 
 
 ### Sesión 2
-#### micro-sesión 1:
+#### micro-sesión 1:apertura. Reflexión inicial.
 Apertura: se hablo sobre como seria la Sesión 
 -Apertura de la semana 
 -Review sobre las bitácoras 
@@ -126,13 +126,60 @@ se hizo esto
 D=A
 ```
 
-#### micro-sesión 4:
-Reflexión final
+#### micro-sesión 4:cierre. Reflexión final.
 
 Se podría decir que si se logró completar lo que se planteo para la clase de hoy 
 Quedo pendiente ordenar las bitácoras 
 Au me falta poner algunas cosas al día 
 Falto hablar con el profe, pues quedamos de organizar la tabla de puntos y no se realizó 
+
+
+## SEMANA 4
+
+### Sesión 1
+
+#### micro-sesión 1:apertura. Reflexión inicial.
+#### micro-sesión 2:
+#### micro-sesión 3:
+#### micro-sesión 4:cierre. Reflexión final.
+
+### Sesión 2
+
+#### micro-sesión 1:apertura. Reflexión inicial.
+#### micro-sesión 2:
+#### micro-sesión 3:
+#### micro-sesión 4:cierre. Reflexión final.
+
+### Sesión 3
+
+#### micro-sesión 1:apertura. Reflexión inicial.
+#### micro-sesión 2:
+#### micro-sesión 3:
+#### micro-sesión 4:cierre. Reflexión final.
+
+## SEMANA 5
+
+### Sesión 1
+
+#### micro-sesión 1:apertura. Reflexión inicial.
+#### micro-sesión 2:
+#### micro-sesión 3:
+#### micro-sesión 4:cierre. Reflexión final.
+
+### Sesión 2
+
+#### micro-sesión 1:apertura. Reflexión inicial.
+#### micro-sesión 2:
+#### micro-sesión 3:
+#### micro-sesión 4:cierre. Reflexión final.
+
+### Sesión 3
+
+#### micro-sesión 1:apertura. Reflexión inicial.
+#### micro-sesión 2:
+#### micro-sesión 3:
+#### micro-sesión 4:cierre. Reflexión final.
+
 
 
 
