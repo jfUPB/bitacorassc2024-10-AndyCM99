@@ -212,9 +212,16 @@ mirar en chat gtp una manera de solucionar el problema con la ayuda del chatGTP
 ### Sesión 2
 
 #### micro-sesión 1:apertura. Reflexión inicial.
+se recomendo utilizar la clase para trabajar en el 
+programa y preguntar las dudas sobre la misma 
+
+se recordo la finalizacion de la unidad el proximo viernes 
+
 #### micro-sesión 2:
 #### micro-sesión 3:
 #### micro-sesión 4:cierre. Reflexión final.
+
+se utilizo la clase para contemplar unos vidos adicionales para complementar, en la proxima, comenzare con la aplicacion 
 
 ### Sesión 3
 
