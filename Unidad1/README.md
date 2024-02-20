@@ -80,6 +80,8 @@ la lógica proposicional y como se interpretan estos valores en una toma de deci
 ### Sesión 2
 
 #### micro-sesión 1:apertura. Reflexión inicial.
+
+
 Como mi comienzo de semestre estuvo marcado por un fuerte retraso de una semana tome la decisión de utilizar estos 
 espacios para siempre estar tratando de estar al día, en la sesión actual continuaremos con resolver las preguntas  
 desde donde me quede hasta llegar donde lo permita la sesión, cabe recalcar que estoy resolviendo las preguntas en 
@@ -89,7 +91,10 @@ termine de cambiarle el formato por completo a la unidad 1 para cumplir con el r
 conservar un orden en la bitácora
 
 se continua en la próxima micro-sesión con la pregunta numero 3.
+
+
 #### micro-sesión 2:
+
 
 -3 Observa el video 8. ¿Cómo sería el circuito lógico que representa la función booleana del punto anterior?
 
@@ -106,17 +111,119 @@ Los resultados de las operaciones se combinan mediante múltiples puertas OR par
 
 
 #### micro-sesión 3:
+pregunta 4 continuacion 
+
+Un computador de 8 bits puede representar 2^8 = 256 números diferentes. Esto se debe a que
+cada bit puede tener dos estados posibles (0 o 1), y al tener 8 bits, se pueden combinar de 
+2×2×2×2×2×2×2×2=2^8 formas diferentes, lo que resulta en 256 combinaciones únicas. Estos números 
+pueden ser valores enteros en el rango de 0 a 255.
+
+-5 ¿Cuál es la representación binaria del número en 8 bits del número 128?
+
+El número 128 en binario se representa como 
+10000000
+10000000 en 8 bits.
+
+-6 Observa el video 15. ¿Qué es un overflow en una suma binaria? inventa un ejemplo.
+
+En el contexto de las operaciones aritméticas binarias, un overflow ocurre cuando el resultado 
+de una suma excede el rango de números que pueden ser representados por un número específico 
+de bits. En otras palabras, un overflow ocurre cuando el resultado de la suma es demasiado 
+grande para ser almacenado en el número de bits disponibles.
+
+Por ejemplo, considera la suma binaria de dos números de 4 bits:
+
+```
+   1101   (13 en decimal)
++  0110   (6 en decimal)
+  ------
+  10011
+```
+
+El resultado de la suma es \(10011\), que es \(19\) en decimal. Sin embargo, estamos sumando números de 
+4 bits, por lo que el resultado no cabe en los 4 bits disponibles. Por lo tanto, hay un overflow.
+
+-7 Observa el video 16. ¿Cómo se representan números enteros negativos en un computador en complemento a dos? 
+Construye una tabla que represente un conjunto de número enteros positivos y negativos usando 4 bits.
+
+
 
 #### micro-sesión 4:
 
+continua la pregunta -7
+
+Para representar números enteros negativos en complemento a dos en un computador, primero necesitamos 
+entender cómo funciona este sistema de representación. En complemento a dos, los números negativos se 
+representan tomando el complemento a uno del valor absoluto del número en binario y luego sumando 1 al
+resultado. Esto significa que el bit más significativo (el bit más a la izquierda) se utiliza como el 
+bit de signo, donde 0 representa un número positivo y 1 representa un número negativo.
+
+Construyamos una tabla que represente un conjunto de números enteros positivos y negativos utilizando 4 bits:
+
+| Decimal | Binario (complemento a dos) |
+|---------|-----------------------------|
+| 0       | 0000                        |
+| 1       | 0001                        |
+| 2       | 0010                        |
+| 3       | 0011                        |
+| 4       | 0100                        |
+| 5       | 0101                        |
+| 6       | 0110                        |
+| 7       | 0111                        |
+| -8      | 1000                        |
+| -7      | 1001                        |
+| -6      | 1010                        |
+| -5      | 1011                        |
+| -4      | 1100                        |
+| -3      | 1101                        |
+| -2      | 1110                        |
+| -1      | 1111                        |
+
+En esta tabla:
+
+- Los números positivos se representan de manera directa en binario.
+- Para representar los números negativos, tomamos el complemento a uno del valor absoluto en
+  binario del número y luego sumamos 1 al resultado. Por ejemplo, para representar -8, 
+  tomamos el complemento a uno de 8 (que es 0111) y luego sumamos 1, lo que da como resultado 1000.
+
+-8 Observa el video 17. ¿Qué es una unidad aritmética lógica? ¿Qué se puede hacer 
+ si una función no está implementada en la ALU?
+
+ Una Unidad Aritmética Lógica (ALU, por sus siglas en inglés) es un componente fundamental dentro 
+ de un procesador que se encarga de realizar operaciones aritméticas (como suma, resta, multiplicación 
+ y división) y operaciones lógicas (como AND, OR, NOT) en datos binarios. La ALU toma dos operandos y 
+ un código de operación que especifica la operación que se debe realizar, y luego produce un 
+ resultado basado en esa operación.
+
+  si una función no está implementada en la ALU, es posible que se pueda abordar mediante software,
+  hardware especializado o descomposición en operaciones más simples. La elección depende del contexto 
+  específico y los requisitos del sistema.
+
+  -9 ¿La ALU del video anterior puede multiplicar? ¿Cómo podrías resolver por software la multiplicación?
+  
+  
+
 #### micro-sesión 5:cierre. Reflexión final.
+
+Complete 5 preguntas en esta sesión considero que fue bastante productivo ya que hice seguimiento a la información 
+que se brinda en los videos; Me sigue pareciendo muy tedioso la lógica de los numero binarios combinado con la 
+capacidad de bits y su lógica para hacer operaciones entre ellos, al igual como si fuera una función 
+en la ALU.  
+
+también vi la lógica de las compuertas lógicas, y como este sistema 
+de si o no se puede interpretar como una operación u función de la que se espera un resultado  
+
+se continuara la proxima secion para completar la pregunta 9 y continuar con las pregutnas 
+
+se realizaron ajustes y correcciones a la estructura de la bitácora. 
 
 ### Sesión 3
 
 #### micro-sesión 1:apertura. Reflexión inicial.
 #### micro-sesión 2:
 #### micro-sesión 3:
-#### micro-sesión 4:cierre. Reflexión final.
+#### micro-sesión 4:
+#### micro-sesión 5:cierre. Reflexión final.
 
 
 
@@ -158,7 +265,7 @@ pero solo se dio la explicación
 
 #### micro-sesión 3:
 
-se esta habalndo de ña cantidad de péraciones que se pueden hacer dependiendo de la 
+se esta habalndo de la cantidad de péraciones que se pueden hacer dependiendo de la 
 cantidad de bit pensado en operaciones de tipo c
 analizamos eso en un capitulo del libro recomendado en el sitio de la materia 
 
@@ -185,6 +292,16 @@ Se podría decir que si se logró completar lo que se planteo para la clase de h
 Quedo pendiente ordenar las bitácoras 
 Au me falta poner algunas cosas al día 
 Falto hablar con el profe, pues quedamos de organizar la tabla de puntos y no se realizó 
+
+
+### Sesión 3
+
+#### micro-sesión 1:apertura. Reflexión inicial.
+#### micro-sesión 2:
+#### micro-sesión 3:
+#### micro-sesión 4:cierre. Reflexión final.
+
+
 
 
 ## SEMANA 4
