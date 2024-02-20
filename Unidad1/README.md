@@ -1,6 +1,11 @@
 # Bitácora de aprendizaje
-## SEMANA2
-### Sesión1
+
+## SEMANA 2
+
+### Sesión 1
+
+#### micro-sesión 1:apertura. Reflexión inicial.
+
 se hablo durante la semana de solver satisfactoriamente las preguntas en la unidad 1 
 
 ![image](https://github.com/jfUPB/bitacorassc2024-10-AndyCM99/assets/110075857/867e6b82-5ea0-4c59-90f3-ac328059da8c)
@@ -17,7 +22,7 @@ https://www.youtube.com/playlist?list=PLrDd_kMiAuNmSb-CKWQqq9oBFN_KNMTaI videos
 
 opr lo prnto comenzare con las preguntas 
 
-1
+-1
 
 en el video me encontre con una formula bastante interesante 
 
@@ -32,7 +37,7 @@ cuando uno es la negacion del otro
 
 
 
-2
+-2
 ______________
 |x	|y|	z|	R|
 
@@ -61,10 +66,37 @@ D= NOT(X) AND Z OR X AND NOT(Y) AND Z OR X AND Y AND NOT(Z= OR X AND Y AND Z
 pense ene sta inspirado por la imagen de la pregunta anterior 
 
 
-3
+#### micro-sesión 2:
+#### micro-sesión 3:
+#### micro-sesión 4:cierre. Reflexión final.
 
+se cumplió el objetivo que era comenzar a adelantar las preguntas  en la próxima sesión.
+los temas contemplados siempre me parecieron muy interesante, como funcionan 
+la lógica proposicional y como se interpretan estos valores en una toma de decisiones.
 
+### Sesión 2
 
+#### micro-sesión 1:apertura. Reflexión inicial.
+Como mi comienzo de semestre estuvo marcado por un fuerte retraso de una semana tome la decisión de utilizar estos 
+espacios para siempre estar tratando de estar al día, en la sesión actual continuaremos con resolver las preguntas  
+desde donde me quede hasta llegar donde lo permita la sesión, cabe recalcar que estoy resolviendo las preguntas en 
+orden.
+
+termine de cambiarle el formato por completo a la unidad 1 para cumplir con el requerimiento de 
+conservar un orden en la bitácora
+
+se continua en la próxima micro-sesión con la pregunta numero 3.
+#### micro-sesión 2:
+
+#### micro-sesión 3:
+#### micro-sesión 4:cierre. Reflexión final.
+
+### Sesión 3
+
+#### micro-sesión 1:apertura. Reflexión inicial.
+#### micro-sesión 2:
+#### micro-sesión 3:
+#### micro-sesión 4:cierre. Reflexión final.
 
 
 
