@@ -22,7 +22,10 @@ https://www.youtube.com/playlist?list=PLrDd_kMiAuNmSb-CKWQqq9oBFN_KNMTaI videos
 
 opr lo prnto comenzare con las preguntas 
 
--1
+-1 Los computadores digitales modernos funcionan gracias a la teoría de la lógica booleana. observa el video 6, 
+unidad 1.1. de este playlist https://www.youtube.com/playlist?list=PLrDd_kMiAuNmSb-CKWQqq9oBFN_KNMTaI
+Selecciona una función booleana. Representa dicha operación de dos maneras diferentes. 
+¿Pudiste observar en el video esas dos maneras?
 
 en el video me encontre con una formula bastante interesante 
 
@@ -37,7 +40,7 @@ cuando uno es la negacion del otro
 
 
 
--2
+-2 Ahora observa el video 7. Inventa una tabla de verdad de tres entradas y una salida. ¿Cuál es la función booleana que la representa?
 ______________
 |x	|y|	z|	R|
 
@@ -88,8 +91,25 @@ conservar un orden en la bitácora
 se continua en la próxima micro-sesión con la pregunta numero 3.
 #### micro-sesión 2:
 
+-3 Observa el video 8. ¿Cómo sería el circuito lógico que representa la función booleana del punto anterior?
+
+comeinzo viendo el video 8 Part 1 Unit 1.3 - Logic Gates
+
+![image](https://github.com/jfUPB/bitacorassc2024-10-AndyCM99/assets/110075857/be57f1e0-509f-41c2-ae70-8a51f3e33441)
+
+NOT(X), NOT(Y) y NOT(Z) están representados por puertas NOT individuales.
+X AND Y AND Z están representados por una puerta AND.
+Los resultados de las operaciones se combinan mediante múltiples puertas OR para obtener el valor final de D.
+
+-4 Observa el video 14, unidad 2.1. ¿Cuántos números diferentes puede representar un computador de 8 bits?
+
+
+
 #### micro-sesión 3:
-#### micro-sesión 4:cierre. Reflexión final.
+
+#### micro-sesión 4:
+
+#### micro-sesión 5:cierre. Reflexión final.
 
 ### Sesión 3
 
@@ -97,6 +117,7 @@ se continua en la próxima micro-sesión con la pregunta numero 3.
 #### micro-sesión 2:
 #### micro-sesión 3:
 #### micro-sesión 4:cierre. Reflexión final.
+
 
 
 
