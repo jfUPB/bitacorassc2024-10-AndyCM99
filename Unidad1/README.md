@@ -362,7 +362,19 @@ Falto hablar con el profe, pues quedamos de organizar la tabla de puntos y no se
 
 #### micro-sesión 1:apertura. Reflexión inicial.
 #### micro-sesión 2:
-pregunta numero 
+-12 Observa el video 22. ¿Cómo funciona una memoria memoria RAM? ¿Cuál es la relación 
+entre el bus de direcciones y la salida cuando el bit de load es 0 y cuando es 1?
+
+comienzo con el video 22 de la lista ,unidades de memoria
+
+comenzó hablando sobre unidades volátiles y no volátiles, y 
+características de la memoria RAM y 
+su diferencia con una unidad no volátil como un harddrive 
+
+utilizada la RAM principalmente para cargar lógica y programas para operar el computador
+la cual se Borra cuando apagamos la máquina, siendo así la memoria más importante de la maquina
+
+
 #### micro-sesión 3:
 #### micro-sesión 4:
 #### micro-sesión 5:cierre. Reflexión final.
@@ -464,19 +476,6 @@ en la proxima, comenzare con la aplicacion
 
 #### micro-sesión 1:apertura. Reflexión inicial.
 #### micro-sesión 2:
-
--12 Observa el video 22. ¿Cómo funciona una memoria memoria RAM? ¿Cuál es la relación 
-entre el bus de direcciones y la salida cuando el bit de load es 0 y cuando es 1?
-
-comienzo con el video 22 de la lista ,unidades de memoria
-
-comenzó hablando sobre unidades volátiles y no volátiles, y 
-características de la memoria RAM y 
-su diferencia con una unidad no volátil como un harddrive 
-
-utilizada la RAM principalmente para cargar lógica y programas para operar el computador
-la cual se Borra cuando apagamos la máquina, siendo así la memoria más importante de la maquina
-
 
 
 #### micro-sesión 3:
