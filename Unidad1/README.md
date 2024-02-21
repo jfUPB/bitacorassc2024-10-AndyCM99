@@ -374,8 +374,39 @@ su diferencia con una unidad no volátil como un harddrive
 utilizada la RAM principalmente para cargar lógica y programas para operar el computador
 la cual se Borra cuando apagamos la máquina, siendo así la memoria más importante de la maquina
 
+La memoria RAM (Random Access Memory, o memoria de acceso aleatorio) es una forma de memoria
+volátil utilizada en los computadores para almacenar datos y programas en uso. La RAM es 
+accesible de forma aleatoria, lo que significa que se puede acceder a cualquier ubicación de
+memoria de manera directa e independiente de la ubicación de acceso anterior.
 
+El funcionamiento básico de la memoria RAM implica el almacenamiento de datos en celdas de
+memoria, organizadas en filas y columnas, donde cada celda contiene un bit o un grupo de bits. 
+Estas celdas se direccionan utilizando señales de dirección y se leen o escriben utilizando 
+señales de control.
+
+La relación entre el bus de direcciones y la salida del mando de bit de load 
+(también conocido como chip select) en una memoria RAM estándar (como la memoria DRAM) 
+determina qué celda de memoria se selecciona para la operación de lectura o escritura.
+
+Cuando la salida del mando de bit de load es 0:
+- El chip select indica que la memoria no está seleccionada.
+- No se permite la lectura o escritura en la memoria.
+- La memoria no responde a ninguna operación de lectura o escritura.
+
+Cuando la salida del mando de bit de load es 1:
+- El chip select indica que la memoria está seleccionada.
+- Se permite la lectura o escritura en la memoria.
+- La memoria responde a las operaciones de lectura o escritura 
+  dirigidas a la dirección especificada por el bus de direcciones.
+
+En resumen, el bus de direcciones se utiliza para seleccionar
+una ubicación de memoria específica, y la salida del mando de bit
+de load determina si la memoria está activada o desactivada
+para la operación de lectura o escritura en esa ubicación de memoria.
 #### micro-sesión 3:
+
+continuo con la pregunta numero 13 
+-13 Observa el video 23. ¿Cuál es la función del program counter en un computador?
 #### micro-sesión 4:
 #### micro-sesión 5:cierre. Reflexión final.
 
