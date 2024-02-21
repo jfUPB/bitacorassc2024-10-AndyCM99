@@ -479,6 +479,9 @@ se utilizo la clase para contemplar unos vidos adicionales para complementar, en
 ### Sesión 2
 
 #### micro-sesión 1:apertura. Reflexión inicial.
+comenzamos hablando, sobre mis pendientes con el curso, 
+todo indica a que sera mas trajo autono para esta clase asi que 
+continuare subiendo todos mis pendientes 
 #### micro-sesión 2:
 #### micro-sesión 3:
 #### micro-sesión 4:cierre. Reflexión final.
