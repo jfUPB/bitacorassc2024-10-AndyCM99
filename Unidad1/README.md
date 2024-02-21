@@ -362,8 +362,10 @@ Falto hablar con el profe, pues quedamos de organizar la tabla de puntos y no se
 
 #### micro-sesión 1:apertura. Reflexión inicial.
 #### micro-sesión 2:
+pregunta numero 
 #### micro-sesión 3:
-#### micro-sesión 4:cierre. Reflexión final.
+#### micro-sesión 4:
+#### micro-sesión 5:cierre. Reflexión final.
 
 
 
@@ -455,14 +457,31 @@ se recordo la finalizacion de la unidad el proximo viernes
 #### micro-sesión 3:
 #### micro-sesión 4:cierre. Reflexión final.
 
-se utilizo la clase para contemplar unos vidos adicionales para complementar, en la proxima, comenzare con la aplicacion 
+se utilizo la clase para contemplar unos vidos adicionales para complementar,
+en la proxima, comenzare con la aplicacion 
 
 ### Sesión 3
 
 #### micro-sesión 1:apertura. Reflexión inicial.
 #### micro-sesión 2:
+
+-12 Observa el video 22. ¿Cómo funciona una memoria memoria RAM? ¿Cuál es la relación 
+entre el bus de direcciones y la salida cuando el bit de load es 0 y cuando es 1?
+
+comienzo con el video 22 de la lista ,unidades de memoria
+
+comenzó hablando sobre unidades volátiles y no volátiles, y 
+características de la memoria RAM y 
+su diferencia con una unidad no volátil como un harddrive 
+
+utilizada la RAM principalmente para cargar lógica y programas para operar el computador
+la cual se Borra cuando apagamos la máquina, siendo así la memoria más importante de la maquina
+
+
+
 #### micro-sesión 3:
-#### micro-sesión 4:cierre. Reflexión final.
+#### micro-sesión 4:
+#### micro-sesión 5:cierre. Reflexión final.
 
 
 
@@ -483,6 +502,16 @@ comenzamos hablando, sobre mis pendientes con el curso,
 todo indica a que sera mas trajo autono para esta clase asi que 
 continuare subiendo todos mis pendientes 
 #### micro-sesión 2:
+
+durante esta sesión ya me senté a hablar con el profesor a lo que él hizo cambios 
+a mis notas ya que ya tenía más actualizada la bitácora, a lo que él me hizo un 
+feedback de cómo manejar mis dudas y mi progreso de aprendizaje, a lo que lo ideal 
+es que realice unas cuantas correcciones para darle prioridad al progreso de aprendizaje
+
+un problema con esta sesion es que necesito 
+contiuar desarroyando las preguntas
+para poder actualizar al completo la semna 4
+
 #### micro-sesión 3:
 #### micro-sesión 4:cierre. Reflexión final.
 
@@ -491,7 +520,8 @@ continuare subiendo todos mis pendientes
 #### micro-sesión 1:apertura. Reflexión inicial.
 #### micro-sesión 2:
 #### micro-sesión 3:
-#### micro-sesión 4:cierre. Reflexión final.
+#### micro-sesión 4:
+#### micro-sesión 5:cierre. Reflexión final.
 
 
 
