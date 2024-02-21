@@ -217,14 +217,64 @@ se continuara la proxima secion para completar la pregunta 9 y continuar con las
 
 se realizaron ajustes y correcciones a la estructura de la bitácora. 
 
+
+
 ### Sesión 3
 
 #### micro-sesión 1:apertura. Reflexión inicial.
+
+se retoma la actividad de las preguntas.
+
+comenzamos de nuevo con la pregunta numero 9, trataremos de avanzar lo que mas se pueda 
+
 #### micro-sesión 2:
+
+
+contiunua el punto 9 
+puede que la ALU en contextos no tenga funciones, en el anterior video no recuerdo que pudiera realizar dicha 
+función, se puede resolver con hardware o con software, o simplemente desglosando la operación en algo más simple, 
+yo lo resolvería de la manera más obvia, mediante sumas, 2*4 seria 2+2+2+2
+
+-10 Observa el video 20, unidad 3.1. ¿Cuál es la diferencia entre la lógica combinacional y la lógica secuencial?
+
+ la principal diferencia entre la lógica combinacional y la lógica secuencial radica en cómo la salida de un circuito 
+ digital se calcula en relación con el tiempo y el estado interno del circuito. La lógica combinacional depende únicamente 
+ de las entradas presentes, mientras que la lógica secuencial también depende del estado interno del circuito, que puede
+ cambiar con el tiempo.
+
 #### micro-sesión 3:
+Observa el video 21. ¿Por qué se combina lógica combinacional y secuencial para construir un computador?
+Muestra un circuito que permita almacenar un bit en un computador  
+
+vi el video pero aun no me quedo claroe ste tema por lo que no pude continuar 
+
 #### micro-sesión 4:
+continuo con la pregunta 11
+
+comenzamos de nuevo con la pregunta numero 9, trataremos de avanzar lo que mas se pueda la 
+lógica combinacional nos permite realizar diferente tipos de operaciones lógicas de manera 
+instantánea pero la secuencial nos permite decidir en qué momento podemos ejecutar dichas 
+operaciones y así controlar el estado interno del sistema 
+
+un circuito que cumple con el requerimiento seria 
+
+![image](https://github.com/jfUPB/bitacorassc2024-10-AndyCM99/assets/110075857/627f1327-519c-423d-b985-6342b6000b5e)
+
+aunque honestamente sigo teniendo mis dudas al respecto
+
+
+
 #### micro-sesión 5:cierre. Reflexión final.
 
+me parece que pudo ser más ágil la sesión, pero me parece 
+bastante confuso el tema de como almacena un flip flop
+información para poder realizar una operación e una manera como
+mantener un dato en concreto  
+
+lo ideal sería adelantar lo que más se pueda la próxima sesión fue complicado para mi 
+esta parte del tema entiendo de que trata 
+esto pero lógicamente me confunde como se
+almacena un bit
 
 
 
@@ -399,6 +449,9 @@ se utilizo la clase para contemplar unos vidos adicionales para complementar, en
 #### micro-sesión 2:
 #### micro-sesión 3:
 #### micro-sesión 4:cierre. Reflexión final.
+
+
+
 
 ## SEMANA 5
 
