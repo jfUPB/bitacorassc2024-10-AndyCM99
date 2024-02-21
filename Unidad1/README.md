@@ -407,10 +407,27 @@ para la operación de lectura o escritura en esa ubicación de memoria.
 
 continuo con la pregunta numero 13 
 -13 Observa el video 23. ¿Cuál es la función del program counter en un computador?
+
+nos permite recorrer un numero x de tareas resueltas de manera secuencialmente, es decir, 
+primero tiene que resolver tarea 1, para resolver la 2, para luego la 3 y viceversa 
+lo que garantiza que se las instrucciones se ejecuten en el orden correcto
+
+continuo con la pregunta 
+-14 Observa el video 26, unidad 4.1. ¿Cuál es la diferencia entre el lenguaje 
+ensamblador y el lenguaje de máquina?
+
+que el lenguaje de me maquina este compuesto enteramente por instrucciones binarias y el lenguaje ensamblador 
+proporciona una traducción a estas instrucciones lo que le hace más legible y comprensible para el usuario
+ 
 #### micro-sesión 4:
 #### micro-sesión 5:cierre. Reflexión final.
 
+me queda pendiente la micro sesión 4, la cual desarrollare en casa, con eso ya solo quedaría pendiente 
+desarrollar el ejercicio
 
+em esta parte de la unidad es interesante como se almacenan los bits para poder seleccionar
+una instrucción en específico sin necesidad de recorrer todos lo siclos programados y simplemente 
+poder controlar el sistema y su estado interno el mismo. 
 
 
 ## SEMANA 4
