@@ -287,8 +287,22 @@ el dia de hoy comenzamos provando el juego Silicon Zeroes, muy interezante biend
 pudimos aprender sobre todos estos contadores logicos y su tiempos para ver como funcionan y como trasmiten la imformacion para poder tomar un u otra decision 
 o simplemnte leer la imformacion de cierta manera. 
 
+![image](https://github.com/jfUPB/bitacorassc2024-10-AndyCM99/assets/110075857/3f324d6c-aa25-40ed-b37f-b5a7342a8bc0) 
+
+vimos como con este juego podíamos a manera de puzle realizar circuitos con compuertas lógicas y así superar niveles 
+mostraba como realmente funcionan en de una manera demostrativa como se realizaban las operaciones
+
+![image](https://github.com/jfUPB/bitacorassc2024-10-AndyCM99/assets/110075857/89169223-1d09-451f-9e6b-a8f41885bedd) 
+
+
+cada nivel aumenta la complejidad del circuito requerido
+
+
+
 ### Sesión 2
+
 #### micro-sesión 1:apertura. Reflexión inicial.
+
 Apertura: se hablo sobre como seria la Sesión 
 -Apertura de la semana 
 -Review sobre las bitácoras 
