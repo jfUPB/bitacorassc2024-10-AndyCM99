@@ -61,9 +61,65 @@ terminare de ver antes de proseguir con la sesion.
 ### Sesión 2
 
 #### micro-sesión 1:apertura. Reflexión inicial.
+Comenzando con dsl, mirando lo que necesitamos 
+-. Visual estudio 
+- instalar extensiones de visual estudio 
+   -Desktop development with C++ 
+   -Game developer for unity and unreal 
+
 #### micro-sesión 2:
+continuamos trbajando en visual studio 
+
+![image](https://github.com/jfUPB/bitacorassc2024-10-AndyCM99/assets/110075857/85b72d4e-6caa-4a3e-bc1a-e182cd21f354)
+
+pedimos que se pinteara hello world pero no declaramos pintf por lo que aún no printea nada 
+
+recordar declarar todo al inicio del código 
+
+nos familiarizamos con el la consola de visual studio y su interfaz como tal  
+
+
 #### micro-sesión 3:
+
+![image](https://github.com/jfUPB/bitacorassc2024-10-AndyCM99/assets/110075857/21667428-1b0e-4b20-99cd-fec6715aed74) 
+
+comprovamos qeu todo funciona 
+
+nos vmaos a sdl releases que esta en el sitio 
+
+![image](https://github.com/jfUPB/bitacorassc2024-10-AndyCM99/assets/110075857/be776756-ac79-417b-bb27-6bb6f4b679b7)
+
+vamosa usar la version 2.30.0
+esta 
+
+![image](https://github.com/jfUPB/bitacorassc2024-10-AndyCM99/assets/110075857/189c7cae-f5f5-484d-b8eb-63dd06405816)
+
+luego la pusimos en el disco local c 
+
+para poder usar la biblioteca 
+
+![image](https://github.com/jfUPB/bitacorassc2024-10-AndyCM99/assets/110075857/e2774bd3-40b9-4064-ab33-bbcf485079d5)
+
+luego tenemos que incluir el codigo de la vibliotea, la carpeta lib 
+
+![image](https://github.com/jfUPB/bitacorassc2024-10-AndyCM99/assets/110075857/cba5b3cb-dd7c-4144-841d-dee16850752f)
+
+y luego le digo cual de las bibliotecas suaremos, y le esribo en input cuales usare 
+
+aqui 
+
+![image](https://github.com/jfUPB/bitacorassc2024-10-AndyCM99/assets/110075857/c725bfde-fc1f-4ec3-85b5-a47b6a998d7f)
+
+luego de realizar lo anterior prodecemos a copiar y pegar el archivo SDL2.DLL
+en donde se creo el proyecto 
+
+
+
+
+
 #### micro-sesión 4:cierre. Reflexión final.
+
+finalizamos  con la familiarizacion con el espacio de trabajo en visual estudio para comensar el trbajo con sdl2 
 
 ### Sesión 3
 
