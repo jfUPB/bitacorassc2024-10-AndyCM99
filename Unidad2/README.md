@@ -149,6 +149,15 @@ Etapa 1: configuración básica con SDL2
 
 *Implementar la lógica básica para mover las paletas utilizando el teclado.
 
+luego de descargar sdl 2 me percate de intalar 
+
+![image](https://github.com/jfUPB/bitacorassc2024-10-AndyCM99/assets/110075857/0dee0123-7c54-467c-a60f-da2a8e7fad86)
+
+Desktop development with C++
+
+
+
+
 #### micro-sesión 2:
 
 
