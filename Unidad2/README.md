@@ -124,7 +124,35 @@ finalizamos  con la familiarizacion con el espacio de trabajo en visual estudio 
 ### Sesión 3
 
 #### micro-sesión 1:apertura. Reflexión inicial.
+
+El plan para la sesión de hoy es comenzar el curso recomendado por el profe para sdl2 
+
+Primero comenzare agregando las librerías a un proyecto nuevo 
+Luego comenzare con el video, el curso que es un video de 2 horas
+ tratare de se lo mas ortopédico para una correcta asimilación, tratar de hacer paso por paso
+
+mi idea es como básico, terminar la primera hora de video en esta sesión  
+
+antes de comenzar con el video, primero mirare el sitio del curso  
+
+![image](https://github.com/jfUPB/bitacorassc2024-10-AndyCM99/assets/110075857/099c71bc-98cb-4999-afc8-61b256a13194)
+
+datos para conezar 
+
+para esta unidad 2 comenzare trbajando de a poco en el proyecto pong aplicando los conseptos adquiridos vaya pasando cada etapa 
+
+Etapa 1: configuración básica con SDL2
+
+*Configurar un proyecto de C con SDL2 y cargar una ventana en blanco en pantalla.
+
+*Mostrar las paletas y la pelota en posiciones iniciales estáticas.
+
+*Implementar la lógica básica para mover las paletas utilizando el teclado.
+
 #### micro-sesión 2:
+
+
+
 #### micro-sesión 3:
 #### micro-sesión 4:
 #### micro-sesión 5:cierre. Reflexión final.
