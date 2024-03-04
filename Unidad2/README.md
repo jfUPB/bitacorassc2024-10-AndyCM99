@@ -171,9 +171,41 @@ Desktop development with C++
 ### Sesión 1
 
 #### micro-sesión 1:apertura. Reflexión inicial.
+comenzamos trbajando con el codigo que comnezamos las semana pasada, 
+continuamos con el trabajo, }
+
+el profe explicara unas cosas y luego continuaremos con 
+una explicacion de dudas sobre el tema 
+
+
 #### micro-sesión 2:
+
+Comenzamos haciendo pruebas con el depurador 
+
+Miramos como utilizar los controles y correr el código, línea de código por línea de código 
+
+Justo en la barra de acción del depurador  
+
+
+vimos como almacenar temporales y su dirreccion en bariables para manipular los datos 
+
+utilizamos la funcion 
+´´´
+Myclass miclass1 = new Myclass()
+Myclass miclass1 = new Myclass()
+
+´´´ 
+
+para poder saber la direccion del objeto en concreto, se hace referencia a punteros 
+
 #### micro-sesión 3:
+
+el profesor me explico a set el proyecto con las bibliotecas 
+tenia dudas, no recordbaa como agregar la biblioteca
 #### micro-sesión 4:cierre. Reflexión final.
+
+
+quedo pendiente una explicación para la próxima clase   
 
 ### Sesión 2
 
