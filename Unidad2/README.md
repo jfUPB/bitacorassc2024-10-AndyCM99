@@ -210,7 +210,15 @@ quedo pendiente una explicación para la próxima clase
 ### Sesión 2
 
 #### micro-sesión 1:apertura. Reflexión inicial.
+comenzamos pensando que vamos a mirar como se definen las funciones en el lenguaje en c
+el profe nos explica que es importante pensar en cómo se declaran las funciones por que el lenguaje tiene reglas 
+asiq ue se nos invito a tener eso en cuenta 
+
+nos habla de las bariables globales como game running en el codigo quee estmoas analizando 
+
 #### micro-sesión 2:
+
+continuamos realizando puevas con chat gtp 
 #### micro-sesión 3:
 #### micro-sesión 4:cierre. Reflexión final.
 
