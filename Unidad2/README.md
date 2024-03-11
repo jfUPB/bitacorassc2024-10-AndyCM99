@@ -155,10 +155,22 @@ luego de descargar sdl 2 me percate de intalar
 
 Desktop development with C++
 
+![image](https://github.com/jfUPB/bitacorassc2024-10-AndyCM99/assets/110075857/03d29e61-4891-49d3-bb15-cabd95b6cb41)
+
+Por alguna razón sea un descuido de mi parte o algún otro, se me creaba el proyecto como un proyecto de C# pero ya quedo solucionado.
+
+Finalmente, el proyecto está listo para comenzar, continuo viendo el tutorial y la guía de la pagina del curso 
+
+![image](https://github.com/jfUPB/bitacorassc2024-10-AndyCM99/assets/110075857/d613198b-08f0-4f30-98ef-11e7467c5889)
+
+0 ERRORE 
+
 
 
 
 #### micro-sesión 2:
+Retomando pude solucionar y crear correctamente un nuevo proyecto en C++ para comenzar, 
+cree el archivo Main.c satisfactoriamente, para comenzar a instalar el SDL2 
 
 
 
