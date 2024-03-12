@@ -227,7 +227,86 @@ int main(int argc, char* argv[]) {
 
 
 #### micro-sesión 4:
+
+Utilice el código que se mostraba en el sitio del curso, 
+
+Si lo recorremos de arriba abajo podemos ver que en  
+
+```
+int main(int argc, char* argv[]) {
+    init_window();
+    while (TRUE) {
+    }
+    return 0;
+}
+```
+
+le decimos a la funcion main que inicie la ventana que anteriormente definimos con unas características de 
+de posición en pantalla y que tan ancha y alta, y además que el código se compila de una forma
+que para que reconozca las características de la pantalla que queremos crear 
+tiene que estar definida primero, primero tiene que existir por decirlo así la pantalla para poder iniciarla  
+
+y asi queda creada la ventana, podemos decirq ue neustro programa ya crea algo por asi decirlo, aunque sea una pantalla en negro 
+
+![image](https://github.com/jfUPB/bitacorassc2024-10-AndyCM99/assets/110075857/23611738-79fa-4c00-ba20-c60b69da24a9)
+
+pero esta en loop y nos permite cerrarla mas que con alt F4 
+
+bien, ahora le vamosa pedir que esa ventana se nos muestre de algun color y para eso vamos a tener que reenderisar
+ese color en la ventana que creamos, para eso vamos a tener que llamar una funcion de sdl_renderer 
+
+pruimero debemos crear la variable global de renderer de sdl de esta manera justo en la cabeza del código de esta manera  
+
+```
+SDL_Window* window = NULL;
+SDL_Renderer *renderer = NULL;
+
+```
+
+luego debemos definir que driver de render usara sdl, para eso le pedimos a sdl que nos diga cuales hay y cual usara 
+
+![image](https://github.com/jfUPB/bitacorassc2024-10-AndyCM99/assets/110075857/05ea2a43-5cc1-447c-be3e-41b589a0694a)
+
+aquí pretendía crear el driver que vamos a usar pero evidentemente no llame la función
+
+![image](https://github.com/jfUPB/bitacorassc2024-10-AndyCM99/assets/110075857/d68d621b-33cd-401f-8d94-f6996c315552)
+
+y aqui como debería ir inicialmente  
+
+![image](https://github.com/jfUPB/bitacorassc2024-10-AndyCM99/assets/110075857/66e0e9a2-ca96-43d2-95fc-98a5df688fe7)
+
+
+Intente ejecutar el código pero me lanzó un error 
+
+![image](https://github.com/jfUPB/bitacorassc2024-10-AndyCM99/assets/110075857/6e3fd6c5-722d-41c8-91d7-aadbfec29adf)
+
+ya que le dijimos que renderice, pero no le dijimos con que lo va hacer así que regresamos al código y pues 
+primero le pediremos con una función que busque que drivers de render 
+tienen mi sistema y lo llame para que nos sirva de driver para renderizar la ventana
+
+de esta manera, tenemos que ponerlo justo debajo de la cabeza del código ya que como dijimos anteriormente el compilador
+va de arriba abajo, tiene que estar existente para que lo pueda llamar 
+no puedo pedirle que lo cree si aún no ha llamado la herramienta
+
+
+![image](https://github.com/jfUPB/bitacorassc2024-10-AndyCM99/assets/110075857/4942f555-02d2-492b-b8e1-a41f7d463331) 
+
+
+justo arriba de la función que crea la ventana, pero debajo de donde creamos nuestra variable global
+
+
+
+
 #### micro-sesión 5:cierre. Reflexión final.
+
+no pude solucionar el error de la última imagen, dicho error no me permite ejecutar el programa 
+de esto estoy hablando
+
+
+![image](https://github.com/jfUPB/bitacorassc2024-10-AndyCM99/assets/110075857/f5ebc6fc-1c3d-4a36-9f66-4545ce1e2d5c)
+
+pero como se evidencio pudimos por un momento crear una ventana que fue un gran progreso. 
+
 
 ## SEMANA 7
 
