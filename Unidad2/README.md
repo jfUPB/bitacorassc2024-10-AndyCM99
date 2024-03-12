@@ -155,6 +155,15 @@ luego de descargar sdl 2 me percate de intalar
 
 Desktop development with C++
 
+
+
+
+
+
+#### micro-sesión 2:
+Retomando pude solucionar y crear correctamente un nuevo proyecto en C++ para comenzar, 
+cree el archivo Main.c satisfactoriamente, para comenzar a instalar el SDL2 
+
 ![image](https://github.com/jfUPB/bitacorassc2024-10-AndyCM99/assets/110075857/03d29e61-4891-49d3-bb15-cabd95b6cb41)
 
 Por alguna razón sea un descuido de mi parte o algún otro, se me creaba el proyecto como un proyecto de C# pero ya quedo solucionado.
@@ -166,15 +175,56 @@ Finalmente, el proyecto está listo para comenzar, continuo viendo el tutorial y
 0 ERRORE 
 
 
-
-
-#### micro-sesión 2:
-Retomando pude solucionar y crear correctamente un nuevo proyecto en C++ para comenzar, 
-cree el archivo Main.c satisfactoriamente, para comenzar a instalar el SDL2 
-
-
-
 #### micro-sesión 3:
+
+Luego de leer las actividades 3 y 4 procederemos  a crear una ventana con nuestro código 
+
+Utilice el código que se mostraba en el sitio del curso, 
+´´´
+#include <stdio.h>
+#include <SDL.h>
+
+#define TRUE 1
+#define FALSE 0
+#define WINDOW_WIDTH 800
+#define WINDOW_HEIGHT 600
+
+SDL_Window* window = NULL;
+
+
+int init_window(void){
+
+    if (SDL_Init(SDL_INIT_EVERYTHING) != 0) {
+        printf("Error SDL_Init\n");
+        return FALSE;
+    }
+
+    window = SDL_CreateWindow(
+        "My first Window",
+        SDL_WINDOWPOS_CENTERED,
+        SDL_WINDOWPOS_CENTERED,
+        WINDOW_WIDTH,
+        WINDOW_HEIGHT,
+        SDL_WINDOW_BORDERLESS);
+    if (window == NULL) {
+        printf("Error SDL_CreateWindow\n");
+        return FALSE;
+    }
+    return TRUE;
+}
+
+
+int main(int argc, char* argv[]) {
+    init_window();
+    while (TRUE) {
+    }
+    return 0;
+}
+
+´´´
+
+
+
 #### micro-sesión 4:
 #### micro-sesión 5:cierre. Reflexión final.
 
