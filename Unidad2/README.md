@@ -180,7 +180,8 @@ Finalmente, el proyecto está listo para comenzar, continuo viendo el tutorial y
 Luego de leer las actividades 3 y 4 procederemos  a crear una ventana con nuestro código 
 
 Utilice el código que se mostraba en el sitio del curso, 
-´´´
+```
+
 #include <stdio.h>
 #include <SDL.h>
 
@@ -221,7 +222,7 @@ int main(int argc, char* argv[]) {
     return 0;
 }
 
-´´´
+```
 
 
 
