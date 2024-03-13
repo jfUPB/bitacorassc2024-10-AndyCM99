@@ -498,14 +498,143 @@ para que se mantenga en funcionamiento eternamente
 ### Sesión 3
 
 #### micro-sesión 1:apertura. Reflexión inicial.
+
 se dio saludo, se indico que continuaramos con la solucion 
 
 
 #### micro-sesión 2:
-#### micro-sesión 3:
-#### micro-sesión 4:
-#### micro-sesión 5:cierre. Reflexión final.
+comenzamos entendiendo que es esto 
 
+```
+while (gameRunning) {
+  process_input(); // Leo las entradas
+  update();        // calculo las físicas
+  render();        // actualizo las salidas
+}
+```
+
+como dije en la sesión 2 de la semana pasada 
+ el game loop registra los eventos, lee lo que pasa 
+ luego calcula el resultado de lo que esa pasando 
+ y me tira los resultados, es como si le dijéramos que nos registre todo que lo guarde todo
+ y que lo calcule y nos lo diga y nos lo guarde y lo haga en cada siclo del juego, a manera de loop
+
+pero si solo si el juego ya está corriendo, es decir ya está ejecutado 
+
+luego tenemos que integrar dicha función a nuestro código ya que hace
+parte de los requerimientos para nuestra solución
+
+
+```
+void process_input(void) {
+  SDL_Event event;
+  SDL_PollEvent(&event);
+
+  switch (event.type) {
+  case SDL_QUIT:
+    gameRunning = FALSE;
+    break;
+  case SDL_KEYDOWN:
+    if (event.key.keysym.sym == SDLK_ESCAPE) {
+      gameRunning = FALSE;
+    }
+    break;
+  }
+}
+
+void update(void) {
+
+
+}
+
+
+void render(void) {
+
+}
+
+void setup(void) {
+  gameRunning = init_window();
+}
+
+void clean() {
+  SDL_DestroyRenderer(renderer);
+  SDL_DestroyWindow(window);
+  SDL_Quit();
+}
+
+int main(int argc, char* argv[]) {
+  setup();
+  while (gameRunning) {
+    // El concepto de gameloop para correr una aplicación
+    // interactiva
+    process_input(); // Leo las entradas
+    update();        // calculo las físicas
+    render();        // actualizo las salidas
+  }
+  clean();
+  return 0;
+}
+```
+
+primero configuramos el input, le decimos que queremos que guarde cada evento, 
+ calcule resultados, y se reinicie y así en loop hasta que el juego deje de correr 
+
+ pero para que todo esto funcione es importante decirle que gamerunnig = false
+ 
+ 
+ Entonces, al establecer gameRunning en FALSE al principio, garantizamos que el bucle principal no se ejecute 
+ hasta que todas las configuraciones iniciales, como la creación de la ventana, el renderizador, etc., 
+
+
+ 
+#### micro-sesión 3:
+ luego podemos persivir que el codigo queda de esa manera 
+ justo debajo de la funcion main 
+
+ ![image](https://github.com/jfUPB/bitacorassc2024-10-AndyCM99/assets/110075857/7ccc2804-d3c6-45dc-805a-2138f6f1d8fd)
+
+ el continua ejecutandose sin dificultades. 
+
+pero no entiendo bien algo, se supone que él está guardando eventos y pues uno de ellos es la creación de 
+la ventana, y me gustaría saber dónde o como puedo ver donde se guardan estos eventos o como quedan encapsulado
+ le pedi a chat gtp que me lo explicara, me dijo esto : 
+
+ En este código, la entrada del usuario se maneja principalmente en la función process_input(). Aquí se utiliza la
+ función SDL_PollEvent() para comprobar si hay eventos en la cola de eventos y se almacenan en la variable event.
+
+Dentro de process_input(), se utiliza una estructura switch para manejar diferentes tipos de eventos que pueden
+ocurrir. Los eventos pueden ser de varios tipos, como eventos de teclado, eventos de ratón, eventos de ventana, etc.
+En este código, solo se manejan dos tipos de eventos: SDL_QUIT y SDL_KEYDOWN.
+
+Si el evento es del tipo SDL_QUIT, esto significa que el usuario ha intentado cerrar la ventana (por ejemplo, 
+haciendo clic en el botón de cerrar de la ventana). En este caso, se establece gameRunning en FALSE, lo que 
+eventualmente detendrá el bucle principal y terminará el programa.
+
+Si el evento es del tipo SDL_KEYDOWN, esto significa que el usuario ha presionado una tecla del teclado. 
+El código verifica si la tecla presionada es la tecla Escape (SDLK_ESCAPE). Si es así, también se establece
+gameRunning en FALSE, lo que lleva a la misma consecuencia de terminar el bucle principal y finalizar el 
+programa.
+
+En cuanto a cómo se calculan estos eventos, la biblioteca SDL se encarga de ello internamente. SDL_PollEvent() 
+es una función proporcionada por SDL que comprueba si hay eventos en la cola de eventos de SDL y, si hay alguno, lo 
+extrae de la cola y lo almacena en la variable event para que puedas manejarlo.
+
+Entonces, en cada iteración del bucle principal del juego, process_input() se llama para verificar si hay eventos
+nuevos y manejarlos según corresponda. Esto permite que el programa responda a la entrada del usuario en tiempo real
+mientras se ejecuta el bucle principal del juego.
+ 
+#### micro-sesión 4: 
+
+intentando seguir utilizándolo, cometí un error pues no había entendido que habíamos agregado cosas a la función main y a que la funcion main 
+es la que lleva definido el imput, pues en otras palabras teníamos dos funciones de main, pero una vez elimine la primera que creamos al crear la solución 
+se solucionó y guarda correctamente los eventos 
+
+y ahora vamos a pintar algo en nuestro lienzo y como dicen la lista de actividades, continuaremos por pintar un rectángulo que servirá como nuestro ¨personaje principal¨
+
+#### micro-sesión 5:cierre. Reflexión final.
+pudimos hacer que el codigo se integrara con la funcion process_input()
+
+y lograr que el codigo funcionara sin errores  
 
 ## SEMANA 9
 
