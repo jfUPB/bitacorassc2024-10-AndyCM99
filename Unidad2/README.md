@@ -498,6 +498,9 @@ para que se mantenga en funcionamiento eternamente
 ### Sesión 3
 
 #### micro-sesión 1:apertura. Reflexión inicial.
+se dio saludo, se indico que continuaramos con la solucion 
+
+
 #### micro-sesión 2:
 #### micro-sesión 3:
 #### micro-sesión 4:
