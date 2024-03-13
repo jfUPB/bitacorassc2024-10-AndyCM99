@@ -459,7 +459,13 @@ ya que se puede decir que tenemos un espacio de trabajo creado
 
 por lo que subirnos el Código a la git para que podamos manipularlo bajo control de versión
 
-pudimos subir a git la solucion, ahora continuaremos con la aprte del curso que se enfoca en el game loop, 
+pudimos subir a git la solución, ahora continuaremos con la parte del curso que se enfoca en el game loop, 
+
+primero entenderemos de que se trata el game loop para continuar 
+el que básicamente se traduce a una forma de construir el Código de medida que captura todos los eventos que ocurren cuando se ejecuta el Código
+
+así una vez completados todas las funciones y reinicia el Código para que el juego siga funcionando, sean sus físicas su todo, 
+para que se mantenga en funcionamiento eternamente
 
 
 
