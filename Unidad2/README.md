@@ -459,6 +459,9 @@ ya que se puede decir que tenemos un espacio de trabajo creado
 
 por lo que subirnos el Código a la git para que podamos manipularlo bajo control de versión
 
+pudimos subir a git la solucion, ahora continuaremos con la aprte del curso que se enfoca en el game loop, 
+
+
 
 #### micro-sesión 4:cierre. Reflexión final.
 
