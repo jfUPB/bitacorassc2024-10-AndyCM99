@@ -360,23 +360,26 @@ nos habla de las bariables globales como game running en el codigo quee estmoas 
 
 #### micro-sesión 2:
 
-continuamos realizando puevas con chat gtp y aprendiendo como podemos habalrle
-para generar una aproximacion o una buena respuesta para nuestra duda 
+continuamos realizando pruebas con chat gtp y aprendiendo como podemos hablar
+para generar una aproximación o una buena respuesta para nuestra duda 
 
-continuando buscando el error que no me deja ejecutar el programa, pues resulta que yo estaba cometiendo este error 
+continuando, buscando el error que no me deja ejecutar el programa, pues resulta que yo estaba cometiendo este error  
+
 
 ![image](https://github.com/jfUPB/bitacorassc2024-10-AndyCM99/assets/110075857/950dc18b-8daf-40f4-bae2-c13dff114bab) 
 
 
-asi quedo el codigo 
+así quedo el Código 
 
 pero antes estaba de esta manera  
+
 
 ![image](https://github.com/jfUPB/bitacorassc2024-10-AndyCM99/assets/110075857/99132e0f-151a-4c8c-a69b-074e0279686a)
 
 
-pues claro  que no me iba funcionar pues estaba pidiendo que me mostrara una imfoprmacion que no le habia pedido, aun no habia pedido 
-que seleccionara un driver, y pues por logica en ningun momento me iba poder ejecutar.
+pues claro que no me iba funcionar pues estaba pidiendo que me mostrara una información que no le había pedido.
+que seleccionara un driver, y pues por lógica en ningún momento me iba poder ejecutar.
+
 ```
 #include <stdio.h>
 #include <SDL.h>
@@ -441,15 +444,22 @@ int main(int argc, char* argv[]) {
     return 0;
 }
 ```
-asi quedo nuestro codigo actualemnte hasta este momento 
+así quedo nuestro Código hasta este momento 
 
-actualkmente completamos la fase uno de configuarar sdl2 
+actualmente completamos la fase uno de configurar sdl2 
 
 
-podemos continuar con el curso y mirtar todo de game loop 
+podemos continuar con el curso y mirar todo de game loop
+
 
 
 #### micro-sesión 3:
+
+ya que se puede decir que tenemos un espacio de trabajo creado
+
+por lo que subirnos el Código a la git para que podamos manipularlo bajo control de versión
+
+
 #### micro-sesión 4:cierre. Reflexión final.
 
 ### Sesión 3
