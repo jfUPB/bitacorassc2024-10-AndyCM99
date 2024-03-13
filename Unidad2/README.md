@@ -360,7 +360,95 @@ nos habla de las bariables globales como game running en el codigo quee estmoas 
 
 #### micro-sesión 2:
 
-continuamos realizando puevas con chat gtp 
+continuamos realizando puevas con chat gtp y aprendiendo como podemos habalrle
+para generar una aproximacion o una buena respuesta para nuestra duda 
+
+continuando buscando el error que no me deja ejecutar el programa, pues resulta que yo estaba cometiendo este error 
+
+![image](https://github.com/jfUPB/bitacorassc2024-10-AndyCM99/assets/110075857/950dc18b-8daf-40f4-bae2-c13dff114bab) 
+
+
+asi quedo el codigo 
+
+pero antes estaba de esta manera  
+
+![image](https://github.com/jfUPB/bitacorassc2024-10-AndyCM99/assets/110075857/99132e0f-151a-4c8c-a69b-074e0279686a)
+
+
+pues claro  que no me iba funcionar pues estaba pidiendo que me mostrara una imfoprmacion que no le habia pedido, aun no habia pedido 
+que seleccionara un driver, y pues por logica en ningun momento me iba poder ejecutar.
+```
+#include <stdio.h>
+#include <SDL.h>
+
+#define TRUE 1
+#define FALSE 0
+#define WINDOW_WIDTH 800
+#define WINDOW_HEIGHT 600
+
+SDL_Window* window = NULL;
+SDL_Renderer* renderer = NULL;
+
+
+void showRenderDriversInfo(void) {
+    int numRenderDrivers = SDL_GetNumRenderDrivers();
+    printf("Número de drivers de renderizado disponibles: %d\n", numRenderDrivers);
+
+    for (int i = 0; i < numRenderDrivers; i++) {
+        SDL_RendererInfo info;
+        if (SDL_GetRenderDriverInfo(i, &info) == 0) {
+            printf("Driver %d: %s\n", i, info.name);
+        }
+    }
+}
+
+
+int init_window(void) {
+
+    if (SDL_Init(SDL_INIT_EVERYTHING) != 0) {
+        printf("Error SDL_Init\n");
+        return FALSE;
+    }
+    showRenderDriversInfo();
+
+    window = SDL_CreateWindow(
+        "My first Window",
+        SDL_WINDOWPOS_CENTERED,
+        SDL_WINDOWPOS_CENTERED,
+        WINDOW_WIDTH,
+        WINDOW_HEIGHT,
+        SDL_WINDOW_SHOWN);
+    if (window == NULL) {
+        printf("Error SDL_CreateWindow\n");
+        return FALSE;
+    }
+
+    renderer = SDL_CreateRenderer(window, -1, 0);
+    if (renderer == NULL) {
+        printf("Error SDL_CreateRenderer\n");
+        return FALSE;
+    }
+
+    showSelectedRederer();
+
+    return TRUE;
+}
+
+int main(int argc, char* argv[]) {
+    init_window();
+    while (TRUE) {
+    }
+    return 0;
+}
+```
+asi quedo nuestro codigo actualemnte hasta este momento 
+
+actualkmente completamos la fase uno de configuarar sdl2 
+
+
+podemos continuar con el curso y mirtar todo de game loop 
+
+
 #### micro-sesión 3:
 #### micro-sesión 4:cierre. Reflexión final.
 
