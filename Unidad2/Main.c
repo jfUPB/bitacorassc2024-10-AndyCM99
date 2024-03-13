@@ -12,7 +12,7 @@ SDL_Renderer* renderer = NULL;
 
 void showRenderDriversInfo(void) {
     int numRenderDrivers = SDL_GetNumRenderDrivers();
-    printf("Número de drivers de renderizado disponibles: %d\n", numRenderDrivers);
+    printf("NÃºmero de drivers de renderizado disponibles: %d\n", numRenderDrivers);
 
     for (int i = 0; i < numRenderDrivers; i++) {
         SDL_RendererInfo info;
@@ -30,7 +30,7 @@ void showSelectedRederer(void) {
         printf("Driver de renderizado seleccionado: %s\n", rendererInfo.name);
     }
     else {
-        printf("Error al obtener la información del renderizador: %s\n", SDL_GetError());
+        printf("Error al obtener la informaciÃ³n del renderizador: %s\n", SDL_GetError());
     }
 
 }
