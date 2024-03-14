@@ -474,7 +474,32 @@ para que se mantenga en funcionamiento eternamente
 ### Sesión 3
 
 #### micro-sesión 1:apertura. Reflexión inicial.
+continua el trabajo autónomo, en esta ocasión continuaremos lo realizado en la clase de la semana 8 sesión 2 ya que estoy atrasado 
+
+realice unos ajustes en la bitácora ya que tenía unos errores, pero ya está bien
+
+lo primero que realizare será un comit al main.c para luego continuar con las actividades de aprendizaje para el sdl2 
+
+     
+
+
 #### micro-sesión 2:
+
+
+intentando seguir utilizándolo, cometí un error pues no había entendido que habíamos agregado cosas a la función main y a que la funcion main 
+es la que lleva definido el imput, pues en otras palabras teníamos dos funciones de main, pero una vez elimine la primera que creamos al crear la solución 
+se solucionó y guarda correctamente los eventos 
+
+y ahora vamos a pintar algo en nuestro lienzo y como dicen la lista de actividades, continuaremos por pintar un rectángulo que servirá como nuestro ¨personaje principal¨
+
+en ves de hacer el comit preferi realizar un ajuste ya que olvide actalizar el codigo en clase y repeti lo hecho, 
+
+
+y integre de una ves el codigo para generar un rectangulo en pantalla, funciona sin errores 
+
+![image](https://github.com/jfUPB/bitacorassc2024-10-AndyCM99/assets/110075857/cbffd888-caca-4c20-b0b0-25ca06bb7bcd)
+
+y ahora si comit 
 #### micro-sesión 3:
 #### micro-sesión 4:
 #### micro-sesión 5:cierre. Reflexión final.
@@ -491,18 +516,12 @@ para que se mantenga en funcionamiento eternamente
 ### Sesión 2
 
 #### micro-sesión 1:apertura. Reflexión inicial.
-#### micro-sesión 2:
-#### micro-sesión 3:
-#### micro-sesión 4:cierre. Reflexión final.
-
-### Sesión 3
-
-#### micro-sesión 1:apertura. Reflexión inicial.
 
 se dio saludo, se indico que continuaramos con la solucion 
 
 
 #### micro-sesión 2:
+
 comenzamos entendiendo que es esto 
 
 ```
@@ -586,8 +605,8 @@ primero configuramos el input, le decimos que queremos que guarde cada evento,
  hasta que todas las configuraciones iniciales, como la creación de la ventana, el renderizador, etc., 
 
 
- 
 #### micro-sesión 3:
+
  luego podemos persivir que el codigo queda de esa manera 
  justo debajo de la funcion main 
 
@@ -622,19 +641,36 @@ extrae de la cola y lo almacena en la variable event para que puedas manejarlo.
 Entonces, en cada iteración del bucle principal del juego, process_input() se llama para verificar si hay eventos
 nuevos y manejarlos según corresponda. Esto permite que el programa responda a la entrada del usuario en tiempo real
 mientras se ejecuta el bucle principal del juego.
+
+
+#### micro-sesión 4:cierre. Reflexión final.
+
+pudimos hacer que el codigo se integrara con la funcion process_input()
+
+### Sesión 3
+
+
+
+#### micro-sesión 1:apertura. Reflexión inicial.
+
+
+
+
+#### micro-sesión 2:
+
+
+ 
+#### micro-sesión 3:
+
  
 #### micro-sesión 4: 
 
-intentando seguir utilizándolo, cometí un error pues no había entendido que habíamos agregado cosas a la función main y a que la funcion main 
-es la que lleva definido el imput, pues en otras palabras teníamos dos funciones de main, pero una vez elimine la primera que creamos al crear la solución 
-se solucionó y guarda correctamente los eventos 
-
-y ahora vamos a pintar algo en nuestro lienzo y como dicen la lista de actividades, continuaremos por pintar un rectángulo que servirá como nuestro ¨personaje principal¨
 
 #### micro-sesión 5:cierre. Reflexión final.
-pudimos hacer que el codigo se integrara con la funcion process_input()
+
 
 y lograr que el codigo funcionara sin errores  
+
 
 ## SEMANA 9
 
