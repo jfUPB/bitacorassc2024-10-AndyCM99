@@ -501,6 +501,20 @@ y integre de una ves el codigo para generar un rectangulo en pantalla, funciona 
 
 y ahora si comit 
 #### micro-sesión 3:
+
+continuamos integrando un circulo, el que nos servira de pelota para juego
+
+primero teniamos que definir que es un circulo apra que el pueda dibujarlo deacuerdo a nuestras necesidades 
+eso lo conseguimos gracias a que conocemos la ecucacion de un circulo y que el codigo puede interpretar estas opreciones 
+
+![image](https://github.com/jfUPB/bitacorassc2024-10-AndyCM99/assets/110075857/b134fe13-b4ed-4b05-9de9-8dcbdb5af5b8)
+
+según entiendo permite destinar dos unidades de memoria para renderizar permitiendo que sea más fluida la forma en la que se renderiza todo 
+
+el double buffering es una técnica esencial en la programación gráfica para garantizar que las imágenes se actualicen suavemente y sin problemas 
+en la pantalla, proporcionando una experiencia visual de alta calidad para el usuario.
+
+
 #### micro-sesión 4:
 #### micro-sesión 5:cierre. Reflexión final.
 
