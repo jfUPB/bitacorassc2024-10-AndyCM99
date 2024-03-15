@@ -87,7 +87,15 @@ void update(void) {
 
 }
 
-
+void DrawCircle(SDL_Renderer* renderer, int cx, int cy, int radius) {
+    for (int y = -radius; y <= radius; y++) {
+        for (int x = -radius; x <= radius; x++) {
+            if (x * x + y * y <= radius * radius) {
+                SDL_RenderDrawPoint(renderer, cx + x, cy + y);
+            }
+        }
+    }
+}
 void render(void) {
     SDL_Rect rect;
     rect.x = 250; // Posición x del rectángulo
@@ -102,6 +110,13 @@ void render(void) {
     // Dibuja el rectángulo, pero aún no lo muestra
     SDL_SetRenderDrawColor(renderer, 255, 0, 0, 255); // Color del rectángulo: rojo
     SDL_RenderFillRect(renderer, &rect);
+
+    // Dibuja el círculo
+   // SDL_SetRenderDrawColor(renderer, 255, 255, 0, 255); // Amarillo
+   // DrawCircle(renderer, 400, 360, 40); // Dibuja un círculo en (320, 240) con radio 40.
+
+    SDL_RenderDrawPoint(renderer, WINDOW_WIDTH - 1, 0);
+    SDL_RenderDrawPoint(renderer, WINDOW_WIDTH - 1, 2);
 
     // Actualiza el lienzo
     SDL_RenderPresent(renderer);
@@ -120,6 +135,7 @@ void clean() {
 int main(int argc, char* argv[]) {
     setup();
     while (gameRunning) {
+       
         process_input(); 
         update();        
         render();        
