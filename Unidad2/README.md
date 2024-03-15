@@ -352,6 +352,7 @@ quedo pendiente una explicación para la próxima clase
 ### Sesión 2
 
 #### micro-sesión 1:apertura. Reflexión inicial.
+
 comenzamos pensando que vamos a mirar como se definen las funciones en el lenguaje en c
 el profe nos explica que es importante pensar en cómo se declaran las funciones por que el lenguaje tiene reglas 
 asiq ue se nos invito a tener eso en cuenta 
@@ -516,7 +517,36 @@ en la pantalla, proporcionando una experiencia visual de alta calidad para el us
 
 
 #### micro-sesión 4:
-#### micro-sesión 5:cierre. Reflexión final.
+Renderizado en un búfer de dibujo: En la función render(), primero se realizan todas las operaciones de dibujo,
+como dibujar un rectángulo rojo, puntos y cualquier otra forma que desees renderizar. Estas operaciones de dibujo
+se realizan en el búfer de dibujo, que es una región de memoria donde se almacenan los gráficos que se mostrarán
+en la ventana.
+
+Limpieza y presentación del búfer de dibujo: Después de que todas las operaciones de dibujo se hayan completado 
+en el búfer de dibujo, se llama a SDL_RenderPresent(renderer);. Esta función presenta el búfer de dibujo en la 
+ventana, lo que significa que el contenido del búfer de dibujo se muestra en la pantalla al usuario. Al presentar
+el búfer de dibujo en la ventana, se produce el intercambio de búferes, lo que implica que el búfer de dibujo se
+convierte en el búfer de visualización y viceversa.
+
+El intercambio de búferes es lo que constituye el double buffering en este contexto. Mientras que una imagen se está 
+renderizando en el búfer de dibujo, la imagen anterior se mantiene en el búfer de visualización, lo que evita el parpadeo 
+y proporciona una experiencia de renderizado suave y sin problemas al usuario.
+
+Entonces, aunque no hay una implementación directa del double buffering en tu código, SDL se encarga de manejar los búferes 
+de forma transparente detrás de escena, permitiendo el renderizado suave y sin parpadeos en la ventana.
+
+aun continuamos sin cambios, pero podemos intuir varios conceptos importantes, de cómo esta interactuando todo, 
+desde que capturamos todo paso a paso y se genera un ciclo, 
+
+tengo mis dudas con el concepto de cómo se regulan lo FPS, no entiendo a que hace referencia en el código en realidad,
+entiendo que es un FPS y entiendo por qué se necesitan que sean constantes, pero no entiendo, como se supone que el Código piensa optimizar dichos 
+FPS 
+
+#### micro-sesión 5: cierre. Reflexión final.
+
+considero que se cumplió una meta ya que en la próxima sesión tendremos ya por finalizado este espacio de aprendizaje con el SDL2
+
+CIERRO CON UN COMIT EN EL CDODIGO 
 
 ## SEMANA 8
 
