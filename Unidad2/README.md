@@ -553,7 +553,44 @@ CIERRO CON UN COMIT EN EL CDODIGO
 ### Sesión 1
 
 #### micro-sesión 1:apertura. Reflexión inicial.
+
+se dio la indicación de continuar con el trabajo, mientras el libra dudas  
+
+la meta de hoy es poder terminar la guía de sdl2  y poder continuando agregando cosas al código
+
 #### micro-sesión 2:
+
+continuamos con Actividad 12: pixels per seconds
+
+comenzamos entendiendo a que se refiere con pixeles por segundos, y es que con la función
+last_frame_time podemos calcular cuánto tiempo hay entre un frame y otro, y con SDL_GetTicks
+generamos un delay que hace que se ralentice los fps para que sean constantes en el loop por loop 
+para que se genere una imagen más fluida independientemente del sistema en el que se corra el juego 
+
+de esta manera
+
+
+```
+void update(void) {
+  static int last_frame_time = 0;
+
+//  while (!SDL_TICKS_PASSED(SDL_GetTicks(), last_frame_time + FRAME_TARGET_TIME));
+  int time_to_wait = FRAME_TARGET_TIME - (SDL_GetTicks() - last_frame_time);
+  if (time_to_wait > 0 && time_to_wait <= FRAME_TARGET_TIME) {
+    SDL_Delay(time_to_wait);
+  }
+
+  float delta_time = (SDL_GetTicks() - last_frame_time) / 1000.0F;
+  last_frame_time = SDL_GetTicks();
+
+  ball.x += 20* delta_time;
+  ball.y += 20* delta_time;
+}
+```
+
+así podemos generar un cálculo que prediga donde va estar la bola para poder generar un renderizado más rápido 
+y de mejor calidad ya que será más fluido y así podemos hacer que nuestro juego funcione de una forma constante
+ 
 #### micro-sesión 3:
 #### micro-sesión 4:cierre. Reflexión final.
 
