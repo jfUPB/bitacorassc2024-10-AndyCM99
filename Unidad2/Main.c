@@ -8,6 +8,7 @@
 #define FPS 60
 #define FRAME_TARGET_TIME (1000/FPS)
 
+// Actividad para el video 20
 
 ///////////////////////////////////////////////////////////////////////////////
 // Global variables
