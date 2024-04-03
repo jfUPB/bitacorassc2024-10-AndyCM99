@@ -5,162 +5,206 @@
 #define FALSE 0
 #define WINDOW_WIDTH 800
 #define WINDOW_HEIGHT 600
-#define FPS 30
+#define FPS 60
 #define FRAME_TARGET_TIME (1000/FPS)
 
+
+///////////////////////////////////////////////////////////////////////////////
+// Global variables
+///////////////////////////////////////////////////////////////////////////////
+int game_is_running = FALSE;
 SDL_Window* window = NULL;
-SDL_Renderer *renderer = NULL;
-int gameRunning = FALSE;
+SDL_Renderer* renderer = NULL;
+int last_frame_time = 0;
 
-struct ball {
-  float x;
-  float y;
-  float width;
-  float height;
-}ball;
+///////////////////////////////////////////////////////////////////////////////
+// Declare two game objects for the ball and the paddle
+///////////////////////////////////////////////////////////////////////////////
+struct game_object {
+    float x;
+    float y;
+    float width;
+    float height;
+    float vel_x;
+    float vel_y;
+} ball, paddle;
 
-void showRenderDriversInfo(void) {
-  int numRenderDrivers = SDL_GetNumRenderDrivers();
-  printf("Número de drivers de renderizado disponibles: %d\n", numRenderDrivers);
-
-  for (int i = 0; i < numRenderDrivers; i++) {
-    SDL_RendererInfo info;
-    if (SDL_GetRenderDriverInfo(i, &info) == 0) {
-      printf("Driver %d: %s\n", i, info.name);
+///////////////////////////////////////////////////////////////////////////////
+// Function to initialize our SDL window
+///////////////////////////////////////////////////////////////////////////////
+int initialize_window(void) {
+    if (SDL_Init(SDL_INIT_EVERYTHING) != 0) {
+        fprintf(stderr, "Error initializing SDL.\n");
+        return FALSE;
     }
-  }
+    window = SDL_CreateWindow(
+        NULL,
+        SDL_WINDOWPOS_CENTERED,
+        SDL_WINDOWPOS_CENTERED,
+        WINDOW_WIDTH,
+        WINDOW_HEIGHT,
+        SDL_WINDOW_BORDERLESS
+    );
+    if (!window) {
+        fprintf(stderr, "Error creating SDL Window.\n");
+        return FALSE;
+    }
+    renderer = SDL_CreateRenderer(window, -1, 0);
+    if (!renderer) {
+        fprintf(stderr, "Error creating SDL Renderer.\n");
+        return FALSE;
+    }
+    return TRUE;
 }
 
-void showSelectedRederer(void) {
-  // Asumiendo que tienes un SDL_Renderer* llamado renderer que ya fue creado
-
-  SDL_RendererInfo rendererInfo;
-  if (SDL_GetRendererInfo(renderer, &rendererInfo) == 0) {
-    printf("Driver de renderizado seleccionado: %s\n", rendererInfo.name);
-  }
-  else {
-    printf("Error al obtener la información del renderizador: %s\n", SDL_GetError());
-  }
-
-}
-
-
-int init_window(void){
-
-  if (SDL_Init(SDL_INIT_EVERYTHING) != 0) {
-    printf("Error SDL_Init\n");
-    return FALSE;
-  }
-  showRenderDriversInfo();
-
-  window = SDL_CreateWindow(
-    "My first Window",
-    SDL_WINDOWPOS_CENTERED,
-    SDL_WINDOWPOS_CENTERED,
-    WINDOW_WIDTH,
-    WINDOW_HEIGHT,
-    SDL_WINDOW_SHOWN);
-  if (window == NULL) {
-    printf("Error SDL_CreateWindow\n");
-    return FALSE;
-  }
-
-  renderer = SDL_CreateRenderer(window, -1, 0);
-  if (renderer == NULL) {
-    printf("Error SDL_CreateRenderer\n");
-    return FALSE;
-  }
-
-  showSelectedRederer();
-
-  return TRUE;
-}
-
+///////////////////////////////////////////////////////////////////////////////
+// Function to poll SDL events and process keyboard input
+///////////////////////////////////////////////////////////////////////////////
 void process_input(void) {
-  SDL_Event event;
-  SDL_PollEvent(&event);
-
-  switch (event.type) {
-  case SDL_QUIT:
-    gameRunning = FALSE;
-    break;
-  case SDL_KEYDOWN:
-    if (event.key.keysym.sym == SDLK_ESCAPE) {
-      gameRunning = FALSE;
+    SDL_Event event;
+    SDL_PollEvent(&event);
+    switch (event.type) {
+    case SDL_QUIT:
+        game_is_running = FALSE;
+        break;
+    case SDL_KEYDOWN:
+        if (event.key.keysym.sym == SDLK_ESCAPE)
+            game_is_running = FALSE;
+        if (event.key.keysym.sym == SDLK_LEFT)
+            paddle.vel_x = -400;
+        if (event.key.keysym.sym == SDLK_RIGHT)
+            paddle.vel_x = +400;
+        break;
+    case SDL_KEYUP:
+        if (event.key.keysym.sym == SDLK_LEFT)
+            paddle.vel_x = 0;
+        if (event.key.keysym.sym == SDLK_RIGHT)
+            paddle.vel_x = 0;
+        break;
     }
-    break;
-  }
 }
 
-void update(void) {
-  static int last_frame_time = 0;
-
-//  while (!SDL_TICKS_PASSED(SDL_GetTicks(), last_frame_time + FRAME_TARGET_TIME));
-  int time_to_wait = FRAME_TARGET_TIME - (SDL_GetTicks() - last_frame_time);
-  if (time_to_wait > 0 && time_to_wait <= FRAME_TARGET_TIME) {
-    SDL_Delay(time_to_wait);
-  }
-
-  float delta_time = (SDL_GetTicks() - last_frame_time) / 1000.0F;
-  last_frame_time = SDL_GetTicks();
-
-  ball.x += 20* delta_time;
-  ball.y += 20* delta_time;
-
-}
-
-void DrawCircle(SDL_Renderer* renderer, int cx, int cy, int radius) {
-  for (int y = -radius; y <= radius; y++) {
-    for (int x = -radius; x <= radius; x++) {
-      if (x * x + y * y <= radius * radius) {
-        SDL_RenderDrawPoint(renderer, cx + x, cy + y);
-      }
-    }
-  }
-}
-
-void render(void) {
-
-  // Limpia el "lienzo" en este frame (?)
-  SDL_SetRenderDrawColor(renderer, 0, 0, 0, 255); // Color de fondo: negro
-  SDL_RenderClear(renderer);
-
-  // Dibuja el rectángulo, pero aún no lo muestra
-  SDL_SetRenderDrawColor(renderer, 255, 0, 0, 255); // Color del rectángulo: rojo
-  SDL_Rect ball_rect;
-  ball_rect.x = (int)ball.x; // Posición x del rectángulo
-  ball_rect.y = (int)ball.y; // Posición y del rectángulo
-  ball_rect.w = (int)ball.width; // Ancho del rectángulo
-  ball_rect.h = (int)ball.height; // Alto del rectángulo
-  SDL_RenderFillRect(renderer, &ball_rect);
-
-  // Actualiza el lienzo
-  SDL_RenderPresent(renderer);
-}
-
+///////////////////////////////////////////////////////////////////////////////
+// Setup function that runs once at the beginning of our program
+///////////////////////////////////////////////////////////////////////////////
 void setup(void) {
-  gameRunning = init_window();
-  ball.x = 20;
-  ball.y = 20;
-  ball.width = 15;
-  ball.height = 15;
+    // Initialize values for the the ball object
+    ball.width = 15;
+    ball.height = 15;
+    ball.x = 20;
+    ball.y = 20;
+    ball.vel_x = 300;
+    ball.vel_y = 300;
+
+    // Initialize the values for the paddle object
+    paddle.width = 100;
+    paddle.height = 20;
+    paddle.x = (WINDOW_WIDTH / 2) - (paddle.width / 2);
+    paddle.y = WINDOW_HEIGHT - 40;
+    paddle.vel_x = 0;
+    paddle.vel_y = 0;
 }
 
-void clean() {
-  SDL_DestroyRenderer(renderer);
-  SDL_DestroyWindow(window);
-  SDL_Quit();
+///////////////////////////////////////////////////////////////////////////////
+// Update function with a fixed time step
+///////////////////////////////////////////////////////////////////////////////
+void update(void) {
+    // Calculate how much we have to wait until we reach the target frame time
+    int time_to_wait = FRAME_TARGET_TIME - (SDL_GetTicks() - last_frame_time);
+
+    // Only delay if we are too fast too update this frame
+    if (time_to_wait > 0 && time_to_wait <= FRAME_TARGET_TIME)
+        SDL_Delay(time_to_wait);
+
+    // Get a delta time factor converted to seconds to be used to update my objects
+    float delta_time = (SDL_GetTicks() - last_frame_time) / 1000.0F;
+
+    // Store the milliseconds of the current frame
+    last_frame_time = SDL_GetTicks();
+
+    // update ball and paddle position
+    ball.x += ball.vel_x * delta_time;
+    ball.y += ball.vel_y * delta_time;
+    paddle.x += paddle.vel_x * delta_time;
+    paddle.y += paddle.vel_y * delta_time;
+
+    // Check for ball collision with the walls
+    if (ball.x <= 0 || ball.x + ball.width >= WINDOW_WIDTH)
+        ball.vel_x = -ball.vel_x;
+    if (ball.y < 0)
+        ball.vel_y = -ball.vel_y;
+
+    // Check for ball collision with the paddle
+    if (ball.y + ball.height >= paddle.y && ball.x + ball.width >= paddle.x && ball.x <= paddle.x + paddle.width)
+        ball.vel_y = -ball.vel_y;
+
+    // Prevent paddle from moving outside the boundaries of the window
+    if (paddle.x <= 0)
+        paddle.x = 0;
+    if (paddle.x >= WINDOW_WIDTH - paddle.width)
+        paddle.x = WINDOW_WIDTH - paddle.width;
+
+    // Check for game over
+    if (ball.y + ball.height > WINDOW_HEIGHT) {
+        ball.x = WINDOW_WIDTH / 2;
+        ball.y = 0;
+    }
 }
 
-int main(int argc, char* argv[]) {
-  setup();
-  while (gameRunning) {
-    // El concepto de gameloop para correr una aplicación
-    // interactiva
-    process_input(); // Leo las entradas
-    update();        // calculo las físicas
-    render();        // actualizo las salidas
-  }
-  clean();
-  return 0;
+///////////////////////////////////////////////////////////////////////////////
+// Render function to draw game objects in the SDL window
+///////////////////////////////////////////////////////////////////////////////
+void render(void) {
+    SDL_SetRenderDrawColor(renderer, 0, 0, 0, 255);
+    SDL_RenderClear(renderer);
+
+    // Draw a rectangle for the ball object
+    SDL_Rect ball_rect = {
+        (int)ball.x,
+        (int)ball.y,
+        (int)ball.width,
+        (int)ball.height
+    };
+    SDL_SetRenderDrawColor(renderer, 255, 255, 255, 255);
+    SDL_RenderFillRect(renderer, &ball_rect);
+
+    // Draw a rectangle for the paddle object
+    SDL_Rect paddle_rect = {
+        (int)paddle.x,
+        (int)paddle.y,
+        (int)paddle.width,
+        (int)paddle.height
+    };
+    SDL_SetRenderDrawColor(renderer, 255, 255, 255, 255);
+    SDL_RenderFillRect(renderer, &paddle_rect);
+
+    SDL_RenderPresent(renderer);
+}
+
+///////////////////////////////////////////////////////////////////////////////
+// Function to destroy SDL window and renderer
+///////////////////////////////////////////////////////////////////////////////
+void destroy_window(void) {
+    SDL_DestroyRenderer(renderer);
+    SDL_DestroyWindow(window);
+    SDL_Quit();
+}
+
+///////////////////////////////////////////////////////////////////////////////
+// Main function
+///////////////////////////////////////////////////////////////////////////////
+int main(int argc, char* args[]) {
+    game_is_running = initialize_window();
+
+    setup();
+
+    while (game_is_running) {
+        process_input();
+        update();
+        render();
+    }
+
+    destroy_window();
+
+    return 0;
 }
