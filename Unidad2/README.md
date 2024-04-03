@@ -777,13 +777,44 @@ Esto es fundamental para garantizar una experiencia de juego consistente y prede
 la pelota se mueve por fin y continuamos con el video 20 
 
 
+
  
 #### micro-sesión 3:
 
+se ha reorganizado y ampliado el código para incluir una estructura más organizada y modular que facilita
+la expansión y mantenimiento del juego. Además, se han agregado funciones específicas para manejar la entrada
+del usuario, detectar colisiones y actualizar el estado de los objetos del juego.
 
+eso se logro agregando funciones tales como  
 
- 
+Estructura game_object:
+Se agregó una estructura llamada game_object, que se utiliza para representar tanto la pelota (ball) como la paleta 
+(paddle). Esta estructura almacena la posición (x, y), el ancho (width), el alto (height), y las velocidades 
+en los ejes x e y (vel_x, vel_y) de los objetos del juego.
+
+Variables globales redefinidas:
+Se eliminaron algunas variables globales del código anterior, como gameRunning, y se reemplazaron con nuevas
+variables específicas para el juego, como game_is_running.
+
+Funciones adicionales para la gestión de la paleta:
+Se agregaron funciones para manejar el movimiento de la paleta en respuesta a la entrada del teclado (process_input).
+
+Inicialización de la ventana y el renderizador modificada:
+La función initialize_window ahora crea una ventana sin título y sin bordes (SDL_WINDOW_BORDERLESS), lo que puede ser
+útil para crear juegos en pantalla completa.
+
+Funciones para la detección de colisiones y actualización de objetos:
+Se agregaron funciones para detectar colisiones entre la pelota y la paleta, y entre la pelota y los bordes de la ventana.
+También se agregó una función para actualizar las posiciones de la pelota y la paleta en función de su velocidad y el tiempo 
+transcurrido (update).
+
+Función para renderizar objetos del juego:
+Se agregó una función render para dibujar la pelota y la paleta en la ventana de renderizado.
 #### micro-sesión 4: 
+ahora necesito instalar la biblioteca  SDL_ttf 
+https://github.com/libsdl-org/SDL_ttf/releases
+
+
 
 
 #### micro-sesión 5:cierre. Reflexión final.
