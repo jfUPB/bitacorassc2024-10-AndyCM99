@@ -734,14 +734,53 @@ pudimos hacer que el codigo se integrara con la funcion process_input()
 
 #### micro-sesión 1:apertura. Reflexión inicial.
 
+continuar con el trabajo de pong, tratare de ser mas breve con el asunto 
+
 
 
 
 #### micro-sesión 2:
 
 
+La función update que has proporcionado implementa una forma de manejar el tiempo para calcular 
+el movimiento de un objeto en función del tiempo transcurrido entre fotogramas.
+
+Veamos cómo funciona:
+
+Inicialización de last_frame_time:
+La variable last_frame_time es estática, lo que significa que mantiene su valor entre llamadas a la 
+función update. En esta función, last_frame_time almacena el tiempo en milisegundos en que se renderizó 
+el último fotograma.
+
+Cálculo del tiempo de espera:
+Se calcula cuánto tiempo debe esperar el programa antes de actualizar el siguiente fotograma para mantener
+un ritmo constante. Esto se hace restando el tiempo actual (SDL_GetTicks()) del tiempo en que se renderizó
+el último fotograma (last_frame_time) del tiempo objetivo por fotograma (FRAME_TARGET_TIME). Si el tiempo
+de espera calculado es mayor que cero y menor o igual que el tiempo objetivo por fotograma, entonces el
+programa espera ese tiempo utilizando SDL_Delay.
+
+Cálculo del delta de tiempo:
+Se calcula el cambio en el tiempo (delta_time) desde el último fotograma hasta el fotograma actual. Este 
+valor se utiliza para ajustar la velocidad de movimiento del objeto de acuerdo con el tiempo transcurrido, 
+lo que hace que el movimiento del objeto sea independiente de la velocidad de fotogramas del sistema.
+
+Actualización de la posición del objeto:
+La posición del objeto (ball) se actualiza multiplicando la velocidad de movimiento del objeto por el delta
+de tiempo calculado. Esto asegura que el movimiento del objeto sea suave y uniforme, independientemente de 
+la velocidad de fotogramas del sistema.
+
+En resumen, esta función update utiliza el tiempo transcurrido entre fotogramas para garantizar un 
+movimiento suave y uniforme del objeto, incluso si la velocidad de fotogramas del sistema es variable. 
+Esto es fundamental para garantizar una experiencia de juego consistente y predecible.
+
+
+la pelota se mueve por fin y continuamos con el video 20 
+
+
  
 #### micro-sesión 3:
+
+
 
  
 #### micro-sesión 4: 
@@ -749,8 +788,6 @@ pudimos hacer que el codigo se integrara con la funcion process_input()
 
 #### micro-sesión 5:cierre. Reflexión final.
 
-
-y lograr que el codigo funcionara sin errores  
 
 
 ## SEMANA 9
